@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2023-12-21 13:57:20.072230</Created>
+        <Created>2024-02-05 20:46:59.744592</Created>
         <LastChange>2022-06-17T18:54:34.196+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="https://sammlungen.ub.uni-frankfurt.de/i3f/v20/2036031/full/3089,4492/0/default.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_0415.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion id="F_0415_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="120,1865 228,1872 228,1974 120,1974"/>
             <TextLine id="F_0415_chapter_count_001_l_01" custom="readingOrder {index:0;}">
@@ -29,7 +29,7 @@
                 <Coords points="125,2190 145,2192 151,2185 161,2194 165,2190 175,2194 189,2186 194,2189 213,2186 213,2115 166,2122 134,2150 125,2151"/>
                 <Baseline points="131,2164 206,2164"/>
                 <TextEquiv>
-                    <Unicode>...</Unicode>
+                    <Unicode>... Cap̅ l</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -73,7 +73,7 @@
                 <Coords points="295,791 503,740 791,784 858,745 962,770 1055,722 1123,747 1124,673 1035,649 900,681 772,651 689,694 297,681"/>
                 <Baseline points="303,734 438,734 573,734 708,734 843,745 1116,738"/>
                 <TextEquiv>
-                    <Unicode>quęfiunt in uulgari plebe</Unicode>
+                    <Unicode>quę fiunt in uulgari plebe</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0415_column_1_l_03" custom="readingOrder {index:2;}">
@@ -101,7 +101,7 @@
                 <Coords points="494,1161 595,1177 861,1128 977,1152 1163,1147 1161,1080 1081,1091 1046,1067 955,1085 906,1065 793,1094 722,1060 658,1102 600,1067 543,1105 492,1089"/>
                 <Baseline points="500,1151 1156,1133"/>
                 <TextEquiv>
-                    <Unicode>culęchoros ducant</Unicode>
+                    <Unicode>culę choros ducant</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0415_column_1_l_07" custom="readingOrder {index:6;}">
@@ -519,7 +519,7 @@
                 <Coords points="2343,1470 2399,1469 2430,1454 2509,1478 2584,1440 2643,1459 2643,1408 2586,1396 2560,1376 2542,1383 2469,1355 2447,1368 2428,1357 2392,1376 2360,1357 2343,1359"/>
                 <Baseline points="2349,1436 2636,1436"/>
                 <TextEquiv>
-                    <Unicode>Cap̅ li</Unicode>
+                    <Unicode>Cap̅ li</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>

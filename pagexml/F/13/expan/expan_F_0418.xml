@@ -2,17 +2,17 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2023-12-21 13:57:20.710286</Created>
+        <Created>2024-02-05 20:47:00.268346</Created>
         <LastChange>2022-06-24T23:00:28.209+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="https://sammlungen.ub.uni-frankfurt.de/i3f/v20/2036034/full/3089,4492/0/default.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_0418.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion orientation="0.0" type="header" id="F_0418_header" custom="readingOrder {index:0;} structure {type:header;}">
             <Coords points="858,289 2829,289 2829,473 858,473"/>
             <TextLine id="F_0418_header_l_01" custom="readingOrder {index:0;}">
                 <Coords points="1654,358 1731,371 1797,351 1900,383 1942,360 1986,378 2014,364 2066,375 2121,361 2122,299 1972,312 1903,281 1854,288 1798,267 1771,290 1655,303"/>
                 <Baseline points="1661,339 1686,338 1711,337 1736,336 1761,336 1787,336 1812,336 1837,336 1862,338 1888,338 1913,339 1938,339 1963,341 1988,341 2014,342 2039,342 2064,344 2089,344 2115,344"/>
                 <TextEquiv>
-                    <Unicode>xiii liber de ieiunio</Unicode>
+                    <Unicode>xiii liber de ieiunio</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -104,7 +104,7 @@
                 <Coords points="873,843 1016,864 1176,834 1343,879 1454,831 1514,858 1609,844 1650,879 1817,821 1817,758 1421,740 1278,784 1159,736 873,783"/>
                 <Baseline points="879,833 925,831 972,830 1018,828 1065,827 1112,827 1158,825 1205,825 1251,825 1298,825 1345,825 1391,825 1438,824 1484,824 1531,824 1578,824 1624,822 1671,821 1717,820 1764,819 1811,816"/>
                 <TextEquiv>
-                    <Unicode>utebatur Cum uitęhunc rigorem</Unicode>
+                    <Unicode>utebatur Cum uitę hunc rigorem</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_04" custom="readingOrder {index:3;}">
@@ -265,7 +265,7 @@
                 <Coords points="884,3123 972,3151 1114,3111 1209,3148 1283,3100 1781,3144 1860,3112 1860,3074 1719,3038 884,3031"/>
                 <Baseline points="890,3102 938,3102 986,3104 1034,3104 1082,3104 1130,3104 1178,3104 1227,3104 1275,3104 1323,3104 1371,3104 1419,3104 1467,3102 1515,3102 1564,3104 1612,3104 1660,3104 1708,3104 1756,3105 1804,3105 1853,3107"/>
                 <TextEquiv>
-                    <Unicode>licęlegisdem constringatur</Unicode>
+                    <Unicode>licę legis dem constringatur</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_27" custom="readingOrder {index:26;}">
@@ -286,7 +286,7 @@
                 <Coords points="899,3401 1035,3424 1122,3398 1184,3432 1539,3391 1869,3406 1869,3345 1813,3325 1712,3359 1570,3310 1516,3338 1351,3316 1257,3355 1158,3310 899,3340"/>
                 <Baseline points="906,3381 953,3384 1001,3387 1049,3390 1097,3392 1145,3393 1192,3393 1240,3393 1288,3393 1336,3393 1384,3393 1431,3393 1479,3393 1527,3392 1575,3392 1623,3391 1670,3390 1718,3390 1766,3390 1814,3390 1862,3390"/>
                 <TextEquiv>
-                    <Unicode>publicępotestatis banno ibi</Unicode>
+                    <Unicode>publicę potestatis banno ibi</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_30" custom="readingOrder {index:29;}">
@@ -317,7 +317,7 @@
                 <Coords points="1946,833 2174,825 2252,864 2411,847 2530,883 2566,855 2786,848 2787,786 2655,763 2530,792 2400,739 2246,786 2153,786 2095,752 2046,780 1947,768"/>
                 <Baseline points="1952,822 1993,822 2034,822 2076,824 2117,824 2159,824 2200,824 2241,824 2283,824 2324,824 2366,824 2407,825 2448,825 2490,825 2531,826 2573,827 2614,828 2655,830 2697,831 2738,833 2780,834"/>
                 <TextEquiv>
-                    <Unicode>do alicuius publicępotestatis</Unicode>
+                    <Unicode>do alicuius publicę potestatis</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_2_l_04" custom="readingOrder {index:3;}">
@@ -345,7 +345,7 @@
                 <Coords points="1951,1260 2007,1257 2096,1301 2261,1248 2546,1283 2684,1254 2684,1178 2509,1171 2398,1206 2267,1201 2212,1173 2158,1208 1952,1200"/>
                 <Baseline points="1958,1242 1994,1242 2030,1242 2066,1242 2102,1242 2138,1242 2174,1242 2210,1242 2246,1242 2282,1242 2318,1242 2354,1242 2390,1242 2426,1242 2462,1242 2498,1242 2534,1244 2570,1244 2606,1244 2642,1245 2678,1245"/>
                 <TextEquiv>
-                    <Unicode>animędeuote insistere</Unicode>
+                    <Unicode>animę deuote insistere</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_2_l_08" custom="readingOrder {index:7;}">

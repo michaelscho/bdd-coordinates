@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2023-12-21 13:57:20.272476</Created>
+        <Created>2024-02-05 20:46:59.917318</Created>
         <LastChange>2022-06-24T22:14:03.826+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="https://sammlungen.ub.uni-frankfurt.de/i3f/v20/2036032/full/3089,4492/0/default.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_0416.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion orientation="0.0" id="F_0416_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="402,805 785,805 783,1062 400,1062"/>
             <TextLine id="F_0416_chapter_count_001_l_01" custom="readingOrder {index:0;}">
@@ -66,7 +66,7 @@
                 <Coords points="1741,290 1769,294 1794,280 1851,296 1891,278 1980,274 1979,159 1934,177 1894,173 1868,183 1834,181 1786,160 1740,172"/>
                 <Baseline points="1748,254 1773,255 1798,255 1823,257 1848,257 1873,255 1898,255 1923,254 1948,253 1973,251"/>
                 <TextEquiv>
-                    <Unicode>xiii liber </Unicode>
+                    <Unicode>xiii liber</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -118,7 +118,7 @@
                 <Coords points="910,1218 1039,1205 1234,1241 1498,1213 1624,1239 1854,1206 1842,1124 1770,1156 1671,1112 1572,1139 1370,1113 1223,1155 1066,1123 911,1135"/>
                 <Baseline points="917,1190 963,1190 1010,1190 1056,1190 1103,1190 1149,1190 1196,1191 1242,1191 1289,1191 1335,1191 1382,1193 1428,1193 1475,1193 1521,1193 1568,1193 1614,1194 1661,1194 1707,1194 1754,1194 1800,1193 1847,1193"/>
                 <TextEquiv>
-                    <Unicode>In his ieiuniorum diebus nullęlites</Unicode>
+                    <Unicode>In his ieiuniorum diebus nullę lites</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0416_column_1_l_08" custom="readingOrder {index:7;}">
@@ -272,7 +272,7 @@
                 <Coords points="899,3319 1272,3363 1591,3322 1671,3352 1821,3342 1821,3264 1723,3240 1663,3273 1567,3236 1507,3269 1220,3243 899,3269"/>
                 <Baseline points="906,3305 951,3309 996,3313 1042,3316 1087,3318 1133,3320 1178,3320 1223,3321 1269,3321 1314,3321 1360,3321 1405,3320 1450,3320 1496,3320 1541,3320 1587,3318 1632,3318 1677,3320 1723,3320 1768,3321 1814,3323"/>
                 <TextEquiv>
-                    <Unicode>orationes uigilięet elemosinę</Unicode>
+                    <Unicode>orationes uigilię et elemosinę</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0416_column_1_l_30" custom="readingOrder {index:29;}">
@@ -359,7 +359,7 @@
                 <Coords points="1996,1613 2123,1634 2244,1588 2469,1647 2499,1619 2703,1623 2786,1595 2786,1550 2519,1520 2401,1558 1995,1530"/>
                 <Baseline points="2002,1595 2040,1596 2079,1596 2118,1598 2157,1598 2196,1598 2235,1598 2273,1598 2312,1598 2351,1598 2390,1598 2429,1598 2468,1596 2507,1596 2545,1596 2584,1596 2623,1596 2662,1595 2701,1595 2740,1595 2779,1596"/>
                 <TextEquiv>
-                    <Unicode>debent De uigiliis sanctorum</Unicode>
+                    <Unicode>debentDe uigiliis sanctorum</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0416_column_2_l_12" custom="readingOrder {index:11;}">
@@ -492,7 +492,7 @@
                 <Coords points="1957,3462 2079,3443 2248,3494 2380,3424 2784,3438 2861,3415 2857,3317 2812,3347 2677,3336 2633,3374 2452,3330 1954,3399"/>
                 <Baseline points="1962,3414 2014,3417 2066,3419 2118,3420 2170,3422 2222,3422 2274,3422 2326,3422 2378,3420 2430,3419 2482,3415 2534,3412 2586,3408 2638,3404 2690,3399 2742,3393 2794,3388 2846,3379 2853,3378"/>
                 <TextEquiv>
-                    <Unicode>aut propter contumatiam in diędomi</Unicode>
+                    <Unicode>aut propter contumatiam in dię domi</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>

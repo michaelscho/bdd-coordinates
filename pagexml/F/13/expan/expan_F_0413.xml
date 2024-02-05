@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2023-12-21 13:57:19.644454</Created>
+        <Created>2024-02-05 20:46:59.391952</Created>
         <LastChange>2022-06-16T16:26:07.678+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="https://sammlungen.ub.uni-frankfurt.de/i3f/v20/2036029/full/3089,4492/0/default.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_0413.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion orientation="0.0" id="F_0413_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="110,901 191,901 191,950 110,950"/>
             <TextLine id="F_0413_chapter_count_001_l_01" custom="readingOrder {index:0;}">
@@ -189,7 +189,7 @@
                 <Coords points="217,2585 342,2614 564,2583 743,2638 884,2600 1097,2624 1100,2549 1021,2532 928,2563 683,2518 310,2527 271,2485 221,2493"/>
                 <Baseline points="225,2564 268,2564 311,2565 355,2567 398,2568 441,2571 485,2573 528,2574 571,2577 615,2580 658,2582 701,2584 745,2586 788,2588 831,2591 875,2592 918,2594 961,2595 1005,2596 1048,2597 1092,2597"/>
                 <TextEquiv>
-                    <Unicode>Si per trecentos sexaginta v dies</Unicode>
+                    <Unicode>Si per trecentos sexagintav dies</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0413_column_1_l_22" custom="readingOrder {index:21;}">
@@ -238,7 +238,7 @@
                 <Coords points="252,3234 401,3266 441,3242 720,3282 851,3254 1117,3283 1178,3263 1181,3195 1036,3214 916,3176 568,3193 500,3161 399,3177 356,3142 255,3162"/>
                 <Baseline points="260,3204 305,3210 351,3215 396,3220 442,3224 488,3227 533,3229 579,3233 624,3234 670,3236 716,3237 761,3240 807,3240 852,3242 898,3243 944,3245 989,3246 1035,3248 1080,3250 1126,3251 1172,3254"/>
                 <TextEquiv>
-                    <Unicode>ebdomadęad supplementum quadra</Unicode>
+                    <Unicode>ebdomadę ad supplementum quadra</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0413_column_1_l_29" custom="readingOrder {index:28;}">
@@ -252,7 +252,7 @@
                 <Coords points="241,3433 479,3479 613,3448 784,3484 857,3448 917,3481 1123,3483 1181,3467 1186,3361 884,3404 561,3360 477,3394 411,3349 244,3352"/>
                 <Baseline points="248,3402 294,3410 340,3416 387,3422 433,3427 479,3432 526,3435 572,3438 618,3441 665,3443 711,3444 757,3446 804,3447 850,3447 896,3449 943,3449 989,3449 1035,3449 1082,3450 1128,3450 1175,3450"/>
                 <TextEquiv>
-                    <Unicode>feriaquęcaput ieiunii subnotatur</Unicode>
+                    <Unicode>feriaquę caput ieiunii subnotatur</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -456,7 +456,7 @@
                 <Coords points="1243,2617 1406,2616 1451,2647 2219,2635 2219,2552 1963,2565 1884,2516 1768,2573 1536,2518 1459,2565 1243,2558"/>
                 <Baseline points="1250,2603 1298,2604 1346,2606 1394,2606 1442,2607 1490,2607 1538,2607 1587,2607 1635,2607 1683,2607 1731,2607 1779,2607 1827,2607 1875,2607 1924,2606 1972,2606 2020,2606 2068,2606 2116,2606 2164,2606 2213,2606"/>
                 <TextEquiv>
-                    <Unicode>tercia In decembre quarta quęfue</Unicode>
+                    <Unicode>tercia In decembre quarta quę fue</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0413_column_2_l_22" custom="readingOrder {index:21;}">

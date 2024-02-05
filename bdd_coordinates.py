@@ -3,6 +3,7 @@ import os
 from datetime import datetime
 import re
 import xslt_styles
+import roman
 
 
 page_xml_ns = "http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15"
@@ -197,14 +198,14 @@ def set_metadata(root):
     return root
 
 
-def create_link_to_image(root, iiif_start_number):
+def create_link_to_image(root, iiif_start_number, file):
     # Get image name
     image_name = root.find(".//{" + page_xml_ns + "}Page")
     width = image_name.get("imageWidth")
     height = image_name.get("imageHeight")
     # set link to image depending on iiif api
-    link_to_image = f"https://sammlungen.ub.uni-frankfurt.de/i3f/v20/{iiif_start_number}/full/{width},{height}/0/default.jpg"
-    image_name.set("imageFilename", link_to_image)
+    #link_to_image = f"https://sammlungen.ub.uni-frankfurt.de/i3f/v20/{iiif_start_number}/full/{width},{height}/0/default.jpg"
+    image_name.set("imageFilename", file.replace('.xml', '.jpg'))
 
     return root
 
@@ -337,6 +338,27 @@ def get_and_set_text_of_elements(text_region, x_path, tei_root, xslt):
     text_region.find(".//{" + page_xml_ns + "}TextEquiv/{" +
                      page_xml_ns + "}Unicode").text = element_text_abbr
 
+def postprocess_text(text):
+    #text = re.sub(r'\n', '', text)
+    #text = re.sub(r'\s+', ' ', text)
+    text = re.sub(r'^\s', '', text)
+    text = re.sub(r'#', '\n', text)
+    text = re.sub(r'\+\+ ', ' ', text)
+    text = re.sub(r'\+\+([A-Za-z])', ' \g<1>', text)
+    text = re.sub(r'',' ', text)
+    text = re.sub(r' ','', text)
+    text = re.sub(r'\+\+', '', text)
+    text = re.sub(r'([A-Za-z])', ' \g<1>', text)
+    text = re.sub(r'([A-Za-z])', ' \g<1>', text)
+    text = re.sub(r'Cap̅ ', 'Cap̅ ', text)
+    text = re.sub(r' cap̅ ', ' cap̅ ', text)
+    for i in range(1,300):
+        roman_numeral = roman.toRoman(i).lower()
+        text = re.sub(f' {roman_numeral}', f'{roman_numeral}', text)    
+    
+    text = text
+
+    return text
 
 def transform_to_groundtruth(xml, xslt):
     xslt_tree = LET.fromstring(xslt)
@@ -345,11 +367,8 @@ def transform_to_groundtruth(xml, xslt):
     # Apply the transformation
     result_tree = transform(xml)
     # delete new lines and spaces
-    text = re.sub(r'\n', '', str(result_tree))
-    text = re.sub(r'\s+', ' ', str(text))
-    text = re.sub(r'^\s', '', str(text))
-    text = re.sub(r'#', '\n', str(text))
-
+    text = postprocess_text(str(result_tree))
+    
     return text
 
 
@@ -360,10 +379,7 @@ def transform_to_groundtruth_lines(xml, xslt):
     # Apply the transformation
     result_tree = transform(xml)
     # delete new lines and spaces
-    text = re.sub(r'\n', '', str(result_tree))
-    text = re.sub(r'\s+', ' ', str(text))
-    # text = re.sub(r'^\s', '', str(text))
-    text = re.sub(r'#', '\n', str(text))
+    text = postprocess_text(str(result_tree))
 
     return text
 
@@ -409,7 +425,8 @@ def get_and_set_text_of_empty_elements(line, tei_root, list_of_tei_lines):
     line_id = line.get("id")
     for item in list_of_tei_lines:
         if line_id == item[0]:
-            text_item = clean_punctuation(item[1])
+            text_item = item[1]
+            #text_item = clean_punctuation(item[1])
             line.find("./{" + page_xml_ns + "}TextEquiv/{" +
                       page_xml_ns + "}Unicode").text = text_item.strip()
 
@@ -492,7 +509,7 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
         if file.endswith(".xml"):
             root = load_pagexml_file(os.path.join(path, file))
             root = set_metadata(root)
-            root = create_link_to_image(root, iiif_start_number)
+            root = create_link_to_image(root, iiif_start_number, file)
             iiif_start_number += 1
             root = remove_page_elements(root)
             root = remove_text_equiv(root)

@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2023-12-21 13:57:20.477149</Created>
+        <Created>2024-02-05 20:47:00.102908</Created>
         <LastChange>2022-06-24T22:42:01.683+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="https://sammlungen.ub.uni-frankfurt.de/i3f/v20/2036033/full/3089,4492/0/default.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_0417.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion id="F_0417_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="119,649 230,649 230,737 119,737"/>
             <TextLine id="F_0417_chapter_count_001_l_01" custom="readingOrder {index:0;} unclear {offset:0; length:3;} unclear {offset:0; length:3;}">
@@ -418,7 +418,7 @@
                 <Coords points="1241,2158 1291,2183 1383,2134 1493,2163 1853,2112 2036,2160 2171,2123 2171,2027 2090,2068 1895,2043 1860,2077 1658,2033 1565,2073 1468,2040 1241,2049"/>
                 <Baseline points="1248,2115 1293,2115 1339,2115 1385,2115 1431,2115 1477,2115 1523,2115 1568,2115 1614,2114 1660,2114 1706,2114 1752,2112 1798,2112 1844,2112 1889,2112 1935,2112 1981,2112 2027,2112 2073,2114 2119,2114 2165,2115"/>
                 <TextEquiv>
-                    <Unicode>carduū germinat De eodē</Unicode>
+                    <Unicode>carduū germinatDe eodē</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0417_column_2_l_17" custom="readingOrder {index:16;}">
@@ -620,7 +620,7 @@
                 <Coords points="2290,3364 2341,3368 2401,3325 2495,3373 2643,3353 2691,3371 2692,3287 2602,3270 2550,3300 2518,3300 2450,3262 2428,3280 2401,3270 2351,3289 2290,3284"/>
                 <Baseline points="2297,3324 2322,3326 2348,3326 2374,3327 2400,3327 2426,3327 2452,3327 2478,3327 2503,3327 2529,3326 2555,3326 2581,3327 2607,3327 2633,3327 2659,3328 2685,3329"/>
                 <TextEquiv>
-                    <Unicode>tica historia dic̅</Unicode>
+                    <Unicode>tica historia  dic̅</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>

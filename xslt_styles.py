@@ -3,8 +3,8 @@ abbr_xslt = """<xsl:stylesheet version="1.0"
                 xmlns:tei="http://www.tei-c.org/ns/1.0">
 
                 <xsl:template match="text()">
-    <xsl:value-of select="normalize-space()"/>
-</xsl:template>
+                    <xsl:value-of select="normalize-space()"/>
+                </xsl:template>
 
 
                 <!-- Output as plain text -->
@@ -23,7 +23,7 @@ abbr_xslt = """<xsl:stylesheet version="1.0"
                     <xsl:text> </xsl:text>
                     <!-- Output the text of the <abbr> element -->
                     <xsl:apply-templates/>
-                    <xsl:text> </xsl:text>
+                    <xsl:text>++</xsl:text>
 
                 </xsl:template>
 
@@ -39,6 +39,7 @@ abbr_xslt = """<xsl:stylesheet version="1.0"
                 <!-- Template to ignore other elements -->
                 <xsl:template match="pc">
                     <!-- Apply templates to child nodes of these elements -->
+                    <xsl:text>+</xsl:text>
                     <xsl:apply-templates/>
                     <xsl:text> </xsl:text>
                 </xsl:template>
@@ -85,7 +86,7 @@ expan_xslt = """<xsl:stylesheet version="1.0"
                     <!-- Output the text of the <expan> element -->
                     <xsl:text> </xsl:text>
                     <xsl:apply-templates/>
-                    <xsl:text> </xsl:text>
+                    <xsl:text>++</xsl:text>
                 </xsl:template>
 
                 <!-- Template to ignore <abbr> elements -->
@@ -93,6 +94,7 @@ expan_xslt = """<xsl:stylesheet version="1.0"
                                 <!-- Template to ignore other elements -->
                 <xsl:template match="pc">
                     <!-- Apply templates to child nodes of these elements -->
+                    <xsl:text>+</xsl:text>
                     <xsl:apply-templates/>
                     <xsl:text> </xsl:text>
                 </xsl:template>
@@ -148,6 +150,7 @@ abbr_xslt_for_lines = """
                                             <!-- Template to ignore other elements -->
                 <xsl:template match="pc">
                     <!-- Apply templates to child nodes of these elements -->
+                    <xsl:text>+</xsl:text>
                     <xsl:apply-templates/>
                     <xsl:text> </xsl:text>
                 </xsl:template>                       
@@ -172,7 +175,7 @@ abbr_xslt_for_lines = """
                                 <!-- Output the text of the <abbr> element -->
                                 <xsl:text> </xsl:text>
                                 <xsl:apply-templates/>
-                                <xsl:text> </xsl:text>
+                                <xsl:text>++</xsl:text>
                             </xsl:template>
 
                             <!-- Template to ignore <expan> elements -->
@@ -260,6 +263,7 @@ expan_xslt_for_lines = """
                                             <!-- Template to ignore other elements -->
                 <xsl:template match="pc">
                     <!-- Apply templates to child nodes of these elements -->
+                    <xsl:text>+</xsl:text>
                     <xsl:apply-templates/>
                     <xsl:text> </xsl:text>
                 </xsl:template>                           
@@ -284,7 +288,7 @@ expan_xslt_for_lines = """
                                 <!-- Output the text of the <expan> element -->
                                 <xsl:text> </xsl:text>
                                 <xsl:apply-templates/>
-                                <xsl:text> </xsl:text>
+                                <xsl:text>++</xsl:text>
 
                             </xsl:template>
 
@@ -373,6 +377,7 @@ abbr_xslt_for_lines_inscription = """
                                             <!-- Template to ignore other elements -->
                 <xsl:template match="pc">
                     <!-- Apply templates to child nodes of these elements -->
+                    <xsl:text>+</xsl:text>
                     <xsl:apply-templates/>
                     <xsl:text> </xsl:text>
                 </xsl:template>                          
@@ -397,7 +402,7 @@ abbr_xslt_for_lines_inscription = """
                                 <!-- Output the text of the <abbr> element -->
                                 <xsl:text> </xsl:text>
                                 <xsl:apply-templates/>
-                                <xsl:text> </xsl:text>
+                                <xsl:text>++</xsl:text>
                             </xsl:template>
 
                             <!-- Template to ignore <expan> elements -->
@@ -482,6 +487,7 @@ expan_xslt_for_lines_inscription = """
                                             <!-- Template to ignore other elements -->
                 <xsl:template match="pc">
                     <!-- Apply templates to child nodes of these elements -->
+                    <xsl:text>+</xsl:text>
                     <xsl:apply-templates/>
                     <xsl:text> </xsl:text>
                 </xsl:template>
@@ -506,7 +512,7 @@ expan_xslt_for_lines_inscription = """
                                 <!-- Output the text of the <expan> element -->
                                 <xsl:text> </xsl:text>
                                 <xsl:apply-templates/>
-                                <xsl:text> </xsl:text>
+                                <xsl:text>++</xsl:text>
                             </xsl:template>
 
                             <!-- Template to ignore <abbr> elements -->

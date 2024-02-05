@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2023-12-21 13:57:19.845805</Created>
+        <Created>2024-02-05 20:46:59.573256</Created>
         <LastChange>2022-06-17T18:26:50.260+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="https://sammlungen.ub.uni-frankfurt.de/i3f/v20/2036030/full/3089,4492/0/default.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_0414.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion orientation="0.0" id="F_0414_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="392,1680 830,1680 830,1784 392,1784"/>
             <TextLine id="F_0414_chapter_count_001_l_01" custom="readingOrder {index:0;}">
@@ -83,7 +83,7 @@
                 <Coords points="387,3340 421,3330 481,3341 548,3311 591,3319 599,3310 650,3306 650,3237 632,3236 557,3272 542,3262 491,3263 459,3238 407,3259 386,3251"/>
                 <Baseline points="393,3296 418,3295 443,3294 468,3293 493,3293 518,3293 543,3293 568,3294 593,3294 618,3294 644,3294"/>
                 <TextEquiv>
-                    <Unicode>Cap̅ vi</Unicode>
+                    <Unicode>Cap̅ vi</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -254,7 +254,7 @@
                 <Coords points="888,2901 968,2913 1121,2864 1549,2892 1596,2867 1666,2907 1851,2870 1850,2783 1577,2815 1503,2779 1251,2776 1107,2820 1026,2780 887,2831"/>
                 <Baseline points="894,2868 941,2867 989,2865 1036,2864 1084,2864 1131,2862 1179,2862 1226,2862 1274,2862 1321,2862 1369,2861 1416,2861 1464,2861 1511,2861 1559,2859 1606,2859 1654,2858 1701,2857 1749,2856 1796,2853 1844,2852"/>
                 <TextEquiv>
-                    <Unicode>dissoluit stimulo suęcogitati</Unicode>
+                    <Unicode>dissoluit stimulo suę cogitati</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0414_column_1_l_25" custom="readingOrder {index:24;}">
@@ -306,7 +306,7 @@
                 <Coords points="1735,330 1796,293 1890,310 1902,298 1936,301 1972,277 2036,309 2078,294 2079,246 2067,243 2043,257 2007,240 1987,248 1934,220 1851,229 1828,204 1777,225 1738,214"/>
                 <Baseline points="1746,280 2069,287"/>
                 <TextEquiv>
-                    <Unicode>xiii liƀ </Unicode>
+                    <Unicode>xiii liƀ</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -435,7 +435,7 @@
                 <Coords points="1955,2322 2823,2275 2869,2255 2866,2184 2448,2238 2392,2215 2319,2239 2259,2203 2189,2230 2079,2211 2018,2251 1951,2246"/>
                 <Baseline points="1959,2292 2004,2289 2049,2287 2094,2285 2139,2283 2184,2282 2229,2280 2275,2279 2320,2277 2365,2276 2410,2274 2455,2273 2500,2271 2545,2269 2591,2267 2636,2264 2681,2261 2726,2259 2771,2255 2816,2252 2862,2247"/>
                 <TextEquiv>
-                    <Unicode>in c̅suetudinē annuęcelebritatis</Unicode>
+                    <Unicode>in c̅suetudinē annuę celebritatis</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0414_column_2_l_19" custom="readingOrder {index:18;}">
