@@ -65,13 +65,19 @@ def coords_baseline(root, id):
 def add_coordinates_to_missing_facs(root, tei_root):
     # get all lines in tei
     lines = tei_root.findall(".//{" + tei_ns + "}lb")
+    print(lines)
     for line in lines:
         try:
             if line.get("facs") == None:
                 # get line id
                 line_id = line.get("{" + xml_ns + "}id")
                 line.set("facs", coords_baseline(root, line_id))
+                print(LET.tostring(line))
+
+                print(str(line_id))
         except Exception as e:
+            print(LET.tostring(line))
+
             print(e, str(line_id))
 
 
@@ -81,9 +87,9 @@ def copy_id_to_expan(line):
         # get lb in expan
         lb = line.getparent().getparent().find(
             ".//{http://www.tei-c.org/ns/1.0}expan//{http://www.tei-c.org/ns/1.0}lb")
-        print(LET.tostring(line))
+        #print(LET.tostring(line))
 
-        print(line.getparent().tag)
+        #print(line.getparent().tag)
 
         # get id of line
         id = line.get("{" + xml_ns + "}id")
@@ -128,8 +134,9 @@ def set_id_of_tei_elements(root, index, file_name, number_of_files, remaining_pb
             i += 1
         # get all chapter count elements between current <pb> and next
         chapter_counts = root.xpath(
-            f".//tei:label[count(preceding::tei:pb) = {index + 1} and count(following::tei:pb) = {remaining_pbs-1}]", namespaces={'tei': 'http://www.tei-c.org/ns/1.0'})
+            f".//tei:label[count(preceding::tei:pb[not(ancestor::tei:expan)]) = {index + 1} and count(following::tei:pb[not(ancestor::tei:expan)]) = {remaining_pbs-1}]", namespaces={'tei': 'http://www.tei-c.org/ns/1.0'})
         # sort remaining_pbs based on n attribute
+        
         chapter_counts = sorted(chapter_counts, key=lambda x: int(x.get("n")))
         n = 1
         for chapter_count in chapter_counts:
@@ -137,13 +144,16 @@ def set_id_of_tei_elements(root, index, file_name, number_of_files, remaining_pb
                               "_chapter_count_" + str(n).zfill(3))
             change_id_of_chapter_count(page_xml_root, chapter_count)
             n += 1
+
+            
         # get all inscription elements between current <pb> and next
         inscriptions = root.xpath(
-            f".//tei:note[@type='inscription'][count(preceding::tei:pb) = {index + 1} and count(following::tei:pb) = {remaining_pbs-1}]", namespaces={'tei': 'http://www.tei-c.org/ns/1.0'})
+            f".//tei:note[@type='inscription'][count(preceding::tei:pb[not(ancestor::tei:expan)]) = {index + 1} and count(following::tei:pb[not(ancestor::tei:expan)]) = {remaining_pbs-1}]", namespaces={'tei': 'http://www.tei-c.org/ns/1.0'})
         n = 1
         for inscription in inscriptions:
             inscription.set("{" + xml_ns + "}id", file_name +
                             "_inscription_" + str(n).zfill(2))
+            print(LET.tostring(inscription))
             change_id_of_inscription(page_xml_root, inscription)
 
             # get all <lb> elements in inscription
@@ -294,6 +304,7 @@ def replace_text(root, tei_root, list_of_tei_lines, xslt):
 
     # iterate though elements and change text using abbr
     for text_region in text_regions:
+        #print(LET.tostring(text_region))
         if "header" in text_region.get("custom"):
             get_and_set_text_of_elements(
                 text_region, ".//tei:fw", tei_root, xslt)
@@ -329,10 +340,12 @@ def replace_text(root, tei_root, list_of_tei_lines, xslt):
 def get_and_set_text_of_elements(text_region, x_path, tei_root, xslt):
     # get xml_id
     xml_id = text_region.get("id")
+    #print(xml_id)
     # get tei element fw with same xml_id
     element = tei_root.find(f"{x_path}[@xml:id='{xml_id}']", namespaces={
                             'tei': 'http://www.tei-c.org/ns/1.0', 'xml': xml_ns})
     # transform fw to abbr text
+    #print(LET.tostring(element))
     element_text_abbr = transform_to_groundtruth(element, xslt)
     # set text of header
     text_region.find(".//{" + page_xml_ns + "}TextEquiv/{" +
@@ -361,6 +374,7 @@ def postprocess_text(text):
     return text
 
 def transform_to_groundtruth(xml, xslt):
+    #print(LET.tostring(xml))
     xslt_tree = LET.fromstring(xslt)
     # Create an XSLT transformation
     transform = LET.XSLT(xslt_tree)
@@ -394,7 +408,7 @@ def connect_lines(tei_root, xslt_lines):
     column_lines_list = [[re.sub(r'_expan', '', item)
                           for item in line] for line in column_lines_list]
 
-    print(column_lines_list)
+    #print(column_lines_list)
 
     return column_lines_list
 
@@ -418,7 +432,7 @@ def clean_punctuation(text):
     text = text.replace('',' ')
     text = re.sub('(\w)','\g<1> ', text)
 
-    print(text)
+    #print(text)
     return text
 
 def get_and_set_text_of_empty_elements(line, tei_root, list_of_tei_lines):
@@ -478,7 +492,7 @@ def create_standoff_annotation(root):
     return root
 
 
-def create_ground_truth(tei_root, root, file, expan):
+def create_ground_truth(tei_root, root, file, sigle, book_number, expan):
     if expan:
         xslt = xslt_styles.expan_xslt
         xslt_lines = xslt_styles.expan_xslt_for_lines
@@ -499,12 +513,12 @@ def create_ground_truth(tei_root, root, file, expan):
 
     root = create_standoff_annotation(root)
 
-    new_path = os.path.join(os.getcwd(), "pagexml", "F",
-                            "13", suffix.replace('_', ''), suffix)
+    new_path = os.path.join(os.getcwd(), "pagexml", sigle,
+                            book_number, suffix.replace('_', ''), suffix)
     save_xml_file(root, new_path + file)
 
 
-def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_pbs, current_element, tei_root):
+def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_pbs, current_element, tei_root, sigle, book_number):
     for file in os.listdir(path):
         if file.endswith(".xml"):
             root = load_pagexml_file(os.path.join(path, file))
@@ -523,18 +537,40 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
             remaining_pbs -= 1
             add_coordinates_to_missing_facs(root, tei_root)
 
-            create_ground_truth(tei_root, root, file, expan=True)
-            create_ground_truth(tei_root, root, file, expan=False)
+            create_ground_truth(tei_root, root, file, sigle, book_number, expan=True)
+            create_ground_truth(tei_root, root, file, sigle, book_number, expan=False)
 
     return tei_root
 
 
 def main():
+    sigle = "B"
+    book_number = str(13).zfill(2)
+    iiif_start_number = 410
+    # variables
+    path_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}.xml")
+    path_new_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}_new.xml")
+    path = os.path.join(os.getcwd(), "pagexml", sigle, book_number)
+    # get number of files in directory
+    # number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
+    number_of_files = 7
+    remaining_pbs = number_of_files
+    current_element = 0
+
+    tei_root = load_tei_file(path_tei)
+    tei_root = remove_attributes(tei_root)
+    tei_root = iterate_through_pagexml(
+        path, iiif_start_number, number_of_files, remaining_pbs, current_element, tei_root, sigle, book_number)
+
+    save_xml_file(tei_root, path_new_tei)
+
+"""
+def main():
     sigle = "F"
     # variables
     path_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_13.xml")
     path_new_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_13_new.xml")
-    path = os.path.join(os.getcwd(), "pagexml", sigle, "13")
+    path = os.path.join(os.getcwd(), "pagexml", sigle, "01")
     iiif_start_number = 2036028
     # get number of files in directory
     # number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
@@ -548,7 +584,7 @@ def main():
         path, iiif_start_number, number_of_files, remaining_pbs, current_element, tei_root)
 
     save_xml_file(tei_root, path_new_tei)
-
+"""
 
 if __name__ == "__main__":
     main()
