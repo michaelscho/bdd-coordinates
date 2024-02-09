@@ -4,6 +4,8 @@ from datetime import datetime
 import re
 import xslt_styles
 import roman
+import argparse
+import config
 
 
 page_xml_ns = "http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15"
@@ -26,13 +28,13 @@ def delete_wrong_atributes(root, attribute):
     return root
 
 
-def coords_baseline(root, id):
+def coords_baseline(root, id, sigle):
     # get line with id
     line = root.findall(
         ".//{" + page_xml_ns + "}TextLine[@id='" + str(id) + "']")[0]
     # scaling factor for coordinates
     # iiif_scale_factor F 1.34
-    x = 1.34
+    x = config.manuscript_data[sigle]["iiif_scale_factor"]
 
     # fetch coordinates using XPath query from the PAGE XML document root
     coords = line.xpath('.//ns0:Baseline/@points',
@@ -62,7 +64,7 @@ def coords_baseline(root, id):
     return coord_string
 
 
-def add_coordinates_to_missing_facs(root, tei_root):
+def add_coordinates_to_missing_facs(root, tei_root, sigle):
     # get all lines in tei
     lines = tei_root.findall(".//{" + tei_ns + "}lb")
     #print(lines)
@@ -71,7 +73,7 @@ def add_coordinates_to_missing_facs(root, tei_root):
             if line.get("facs") == None:
                 # get line id
                 line_id = line.get("{" + xml_ns + "}id")
-                line.set("facs", coords_baseline(root, line_id))
+                line.set("facs", coords_baseline(root, line_id, sigle))
                 print(LET.tostring(line))
 
                 print(str(line_id))
@@ -593,7 +595,7 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
             root = create_line_id(root)
             current_element += 1
             remaining_pbs -= 1
-            add_coordinates_to_missing_facs(root, tei_root)
+            add_coordinates_to_missing_facs(root, tei_root, sigle)
             #dash
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=True)
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=False)
@@ -729,18 +731,19 @@ def postprocess_TEI(path, list_of_elements_to_be_checked):
         file.write(data)
 
 
-def main():
-    sigle = "Vb"
-    book_number = str(13).zfill(2)
-    iiif_start_number = 410
+def main(sigle, book_number):
+    #sigle = "Vb"
+    #book_number = str(13).zfill(2)
+    #iiif_start_number = 410
+    iiif_start_number = config.manuscript_data[sigle]["iiif_start_number"]
     # variables
     path_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}.xml")
     path_temp_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}_temp.xml")
-    path_new_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}_new.xml")
+    path_new_tei = os.path.join(os.getcwd(), "tei", "output", f"{sigle}_{book_number}_new.xml")
     path = os.path.join(os.getcwd(), "pagexml", sigle, book_number)
     # get number of files in directory
-    # number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
-    number_of_files = 12
+    number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
+    #number_of_files = 12
     remaining_pbs = number_of_files
     current_element = 0
     list_of_elements_to_be_replaced = [['<g ref="#char-019a">ƚ</g>','<g ref="#char-a749">ꝉ</g>'], 
@@ -824,9 +827,16 @@ def main():
     save_xml_file(tei_root, path_new_tei)
 """
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+ #   main()
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Given the sigle and book number, the function adds the ids")
+    parser.add_argument("-S", "--sigle", help="Book sigle", required=True)
+    parser.add_argument("-B", "--book-number", help="Book number", required=True)
+    args = parser.parse_args()
+    main(args.sigle, args.book_number)
+    #python bdd_coordinates.py -S F -B 13
 """
 2036028
 F = https://sammlungen.ub.uni-frankfurt.de/i3f/v20/{2036028}/full/full/0/default.jpg -> 412
