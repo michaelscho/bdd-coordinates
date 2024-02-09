@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Gundram Leifert/gundram.leifert@planet-ai.de:name=bdd-0.3(htr_id=35757)::::v=2.6.7
+prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=de.uros.citlab.module.baseline2polygon.B2PSeamMultiOriented:v=2.6.7
+prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=/net_tf/LA73_249_0mod360.pb:de.uros.citlab.segmentation.CITlab_LA_ML:v=2.6.7
+Transkribus</Creator>
+        <Created>2021-09-24T09:25:17.065+02:00</Created>
+        <LastChange>2022-06-16T14:57:23.766+02:00</LastChange>
+        <TranskribusMetadata docId="1197208" pageId="48539759" pageNr="177" tsid="98889162" status="FINAL" userId="104427" imgUrl="https://files.transkribus.eu/Get?id=PYPYHSPNBVVGSWQWGCMBBPNW&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=OAUYIZTAEGITETMUJAMBQBJH" imageId="23338784"/>
+    </Metadata>
+    <Page imageFilename="Vb_0177.jpg" imageWidth="1845" imageHeight="2462">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1707477606516" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="TextRegion_1654666684964_9"/>
+                <RegionRefIndexed index="1" regionRef="TextRegion_1654666759597_76"/>
+                <RegionRefIndexed index="2" regionRef="TextRegion_1654666793351_152"/>
+                <RegionRefIndexed index="3" regionRef="TextRegion_1654666792242_144"/>
+                <RegionRefIndexed index="4" regionRef="TextRegion_1654666790658_138"/>
+                <RegionRefIndexed index="5" regionRef="TextRegion_1654666789430_134"/>
+                <RegionRefIndexed index="6" regionRef="TextRegion_1654666788214_130"/>
+                <RegionRefIndexed index="7" regionRef="TextRegion_1654666787264_124"/>
+                <RegionRefIndexed index="8" regionRef="TextRegion_1654666786024_120"/>
+                <RegionRefIndexed index="9" regionRef="TextRegion_1654666784800_116"/>
+                <RegionRefIndexed index="10" regionRef="TextRegion_1654666782876_112"/>
+                <RegionRefIndexed index="11" regionRef="TextRegion_1654666781358_108"/>
+                <RegionRefIndexed index="12" regionRef="TextRegion_1654666780327_104"/>
+                <RegionRefIndexed index="13" regionRef="TextRegion_1654666779574_100"/>
+                <RegionRefIndexed index="14" regionRef="TextRegion_1654666778876_96"/>
+                <RegionRefIndexed index="15" regionRef="TextRegion_1654666743804_51"/>
+                <RegionRefIndexed index="16" regionRef="region_1654627337212_1004"/>
+                <RegionRefIndexed index="17" regionRef="region_1654627365456_1013"/>
+                <RegionRefIndexed index="18" regionRef="TextRegion_1654666697964_36"/>
+                <RegionRefIndexed index="19" regionRef="TextRegion_1654666697963_35"/>
+                <RegionRefIndexed index="20" regionRef="TextRegion_1654666696815_29"/>
+                <RegionRefIndexed index="21" regionRef="TextRegion_1654666693019_25"/>
+                <RegionRefIndexed index="22" regionRef="TextRegion_1654666692415_21"/>
+                <RegionRefIndexed index="23" regionRef="TextRegion_1654666691677_17"/>
+                <RegionRefIndexed index="24" regionRef="TextRegion_1654666690468_13"/>
+                <RegionRefIndexed index="25" regionRef="region_1654627394655_1022"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" type="header" id="TextRegion_1654666684964_9" custom="readingOrder {index:0;} structure {type:header;}">
+            <Coords points="124,184 1429,184 1429,278 124,278"/>
+            <TextLine id="r2l1" custom="readingOrder {index:0;}">
+                <Coords points="730,265 753,271 799,242 832,252 857,236 887,254 920,243 939,232 937,172 880,175 858,165 796,197 758,185 729,208"/>
+                <Baseline points="737,227 764,226 792,225 819,225 847,224 874,223 902,222 930,220"/>
+                <TextEquiv>
+                    <Unicode>Cap̅ libri xiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>Cap̅ libri xiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666759597_76" custom="readingOrder {index:1;} structure {type:column_1;}">
+            <Coords points="234,278 849,278 861,396 806,411 805,457 847,495 859,802 820,851 832,909 820,1070 818,1186 878,1191 859,1267 823,1266 832,1404 809,1429 838,1517 808,1813 811,1910 237,1910 232,1506 272,1339 247,1266 253,886 253,720"/>
+            <TextLine id="r2l2" custom="readingOrder {index:0;}">
+                <Coords points="317,392 504,401 586,380 648,404 729,387 807,402 834,399 835,339 781,332 747,351 690,322 638,333 533,308 468,336 404,346 357,329 317,351"/>
+                <Baseline points="325,381 350,379 375,377 400,376 425,376 450,375 475,375 500,375 525,375 550,376 576,376 601,377 626,378 651,378 676,380 701,380 726,381 751,382 776,383 801,384 827,385"/>
+                <TextEquiv>
+                    <Unicode>~i~INCIPIUNT CAPITULA</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l4" custom="readingOrder {index:1;}">
+                <Coords points="314,458 407,453 436,471 525,452 589,479 664,477 724,449 790,452 790,410 759,400 688,414 663,395 607,410 407,386 314,409"/>
+                <Baseline points="321,441 346,440 372,439 398,438 423,437 449,436 475,436 500,435 526,435 552,435 577,435 603,436 629,436 654,437 680,438 706,439 731,440 757,443 783,444"/>
+                <TextEquiv>
+                    <Unicode>TERCII DECIMI LIBRI</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l6" custom="readingOrder {index:2;}">
+                <Coords points="305,518 324,513 352,524 392,511 415,520 453,509 473,518 495,507 519,524 552,526 591,507 591,457 547,470 515,451 496,463 473,458 437,470 405,456 363,463 342,447 304,446"/>
+                <Baseline points="313,502 340,501 367,500 394,499 421,499 448,498 475,498 502,498 529,498 556,498 584,499"/>
+                <TextEquiv>
+                    <Unicode>DE IEIVNIO</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l8" custom="readingOrder {index:3;}">
+                <Coords points="270,566 517,565 576,584 653,566 776,593 823,578 824,526 751,533 704,510 635,521 599,506 553,526 415,507 349,525 270,505"/>
+                <Baseline points="278,557 304,556 331,556 358,555 385,555 412,555 439,555 465,555 492,555 519,555 546,556 573,556 600,557 627,558 653,558 680,559 707,559 734,560 761,561 788,562 815,562"/>
+                <TextEquiv>
+                    <Unicode>~1~De obseruatione qᷓdrages̅</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l11" custom="readingOrder {index:4;}">
+                <Coords points="269,643 356,619 409,637 507,622 537,644 573,620 639,636 693,622 832,645 833,590 638,569 532,590 477,566 436,588 353,588 270,567"/>
+                <Baseline points="278,621 305,620 332,619 359,618 387,618 414,617 441,617 469,617 496,616 523,616 551,616 578,616 605,617 632,617 660,617 687,618 714,619 742,620 769,621 796,622 824,623"/>
+                <TextEquiv>
+                    <Unicode>~2~De ieiunio quatuor tēpoꝝ</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l13" custom="readingOrder {index:5;}">
+                <Coords points="260,693 299,708 354,686 518,686 566,705 642,689 820,697 820,649 770,628 663,647 572,621 509,653 468,652 443,628 401,649 261,644"/>
+                <Baseline points="268,679 295,679 322,678 349,678 376,679 404,679 431,679 458,680 485,680 512,681 540,681 567,682 594,682 621,683 648,684 676,684 703,684 730,685 757,685 784,685 812,685"/>
+                <TextEquiv>
+                    <Unicode>~3~Quo tēpore ad missā flec¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l14" custom="readingOrder {index:6;}">
+                <Coords points="315,748 422,745 457,777 523,745 716,765 797,747 826,768 838,707 725,691 667,712 642,690 600,714 544,692 522,707 500,685 429,706 316,684"/>
+                <Baseline points="323,734 348,735 373,736 398,736 424,737 449,737 474,737 500,738 525,738 550,738 576,738 601,739 626,739 651,739 677,739 702,740 727,740 753,741 778,741 803,742 829,743"/>
+                <TextEquiv>
+                    <Unicode>tamus genua dici debeat</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l17" custom="readingOrder {index:7;}">
+                <Coords points="260,821 303,834 366,814 414,844 443,821 807,826 845,817 846,761 753,780 690,756 628,781 564,757 498,785 404,748 358,771 261,771"/>
+                <Baseline points="268,811 296,810 325,810 353,810 382,810 410,809 439,810 467,810 496,810 524,810 553,810 581,811 610,811 638,811 667,812 695,812 724,813 752,813 781,813 809,813 838,813"/>
+                <TextEquiv>
+                    <Unicode>~4~De illis qui indictū ieiuniv̄</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l19" custom="readingOrder {index:8;}">
+                <Coords points="310,917 335,915 352,928 387,899 416,897 445,921 458,909 486,922 530,921 554,907 603,912 618,909 619,857 551,842 507,851 457,832 419,847 360,813 333,829 311,826"/>
+                <Baseline points="318,881 344,881 371,882 397,882 424,882 451,882 477,883 504,883 531,883 557,883 584,884 611,884"/>
+                <TextEquiv>
+                    <Unicode>contēpserint</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666743830_55" custom="readingOrder {index:9;}">
+                <Coords points="258,914 354,929 422,903 467,927 563,928 620,901 642,923 736,929 820,905 831,914 827,965 827,963 569,979 542,963 509,980 257,962"/>
+                <Baseline points="266,953 295,953 325,953 354,953 384,954 413,954 443,954 472,954 502,954 531,955 561,955 590,955 620,955 649,956 679,956 708,957 738,957 767,958 797,959 826,960 828,960"/>
+                <TextEquiv>
+                    <Unicode>~5~De eadem re seruanda sit</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666743832_57" custom="readingOrder {index:10;}">
+                <Coords points="263,978 484,1007 820,964 827,964 821,1049 262,1044"/>
+                <Baseline points="271,1027 327,1027 383,1028 439,1028 496,1029 552,1029 608,1030 664,1031 721,1032 777,1033 822,1033"/>
+                <TextEquiv>
+                    <Unicode>~6~De lętania maiore qͦmͦͦ ob</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l27" custom="readingOrder {index:11;}">
+                <Coords points="260,1118 318,1112 376,1142 452,1134 491,1104 522,1102 558,1129 621,1102 687,1123 746,1108 746,1068 722,1053 610,1068 558,1049 508,1068 417,1041 352,1066 324,1047 260,1044"/>
+                <Baseline points="268,1099 294,1098 320,1098 346,1098 372,1097 398,1097 424,1097 450,1097 476,1097 503,1097 529,1098 555,1098 581,1098 607,1098 633,1098 659,1098 685,1098 711,1097 738,1097"/>
+                <TextEquiv>
+                    <Unicode>~7~De ieiunio rogationū</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666938091_243" custom="readingOrder {index:12;}">
+                <Coords points="270,1128 801,1129 801,1179 270,1178"/>
+                <Baseline points="270,1173 801,1174"/>
+                <TextEquiv>
+                    <Unicode>~8~Vt in cęna dn̅i ut in reliqͥs</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654625811272_737" custom="readingOrder {index:13;}">
+                <Coords points="300,1202 607,1213 816,1176 872,1202 872,1273 300,1253"/>
+                <Baseline points="307,1242 358,1241 410,1240 462,1240 513,1240 565,1241 617,1241 668,1242 720,1242 772,1243 824,1244 864,1244"/>
+                <TextEquiv>
+                    <Unicode>xlmę dieb ieiuniū n̅ soluat</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666759622_81" custom="readingOrder {index:14;}">
+                <Coords points="273,1239 345,1277 610,1249 823,1277 826,1312 826,1341 266,1322 260,1303 260,1251"/>
+                <Baseline points="261,1307 301,1308 349,1309 398,1310 446,1311 494,1312 542,1313 590,1314 639,1315 687,1316 735,1316 783,1317 826,1317"/>
+                <TextEquiv>
+                    <Unicode>~9~Vt in sabbato sc̅o ieiuniū an¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666759623_83" custom="readingOrder {index:15;}">
+                <Coords points="268,1353 398,1333 811,1351 811,1416 742,1395 688,1417 567,1396 530,1418 401,1415 259,1389"/>
+                <Baseline points="259,1389 273,1388 304,1386 336,1385 367,1384 398,1384 429,1384 460,1384 492,1385 523,1386 554,1387 585,1388 616,1389 648,1390 679,1391 710,1392 741,1392 772,1392 804,1391"/>
+                <TextEquiv>
+                    <Unicode>te nocti sinitiū n̅ soluat</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666759625_85" custom="readingOrder {index:16;}">
+                <Coords points="306,1387 442,1431 488,1407 626,1429 673,1411 720,1440 779,1423 778,1488 520,1489 471,1469 413,1491 360,1471 277,1500 239,1475 251,1426"/>
+                <Baseline points="242,1462 263,1462 293,1463 323,1464 352,1464 382,1464 412,1465 442,1465 472,1465 501,1466 531,1466 561,1466 591,1467 621,1467 650,1468 680,1468 710,1469 740,1469 770,1470"/>
+                <TextEquiv>
+                    <Unicode>~10~Qđ n̅ oporteat in xlma</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l37" custom="readingOrder {index:17;}">
+                <Coords points="308,1542 353,1541 380,1565 429,1545 490,1565 542,1545 597,1565 635,1543 746,1573 812,1565 813,1508 719,1486 642,1504 615,1488 516,1495 468,1472 409,1492 361,1471 308,1500"/>
+                <Baseline points="316,1533 341,1534 367,1534 393,1535 418,1535 444,1536 470,1536 496,1537 521,1537 547,1538 573,1538 599,1538 624,1539 650,1539 676,1539 702,1539 727,1539 753,1539 779,1540 805,1540"/>
+                <TextEquiv>
+                    <Unicode>natalicia sc̅oꝝ celebrari</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654626095671_783" custom="readingOrder {index:18;}">
+                <Coords points="238,1552 298,1569 348,1541 381,1566 449,1547 500,1576 790,1562 789,1608 763,1615 428,1608 309,1638 238,1616"/>
+                <Baseline points="238,1598 244,1599 276,1600 307,1600 339,1601 370,1602 402,1602 433,1602 465,1602 497,1602 528,1603 560,1603 591,1603 623,1603 654,1604 686,1604 717,1605 749,1605 781,1606"/>
+                <TextEquiv>
+                    <Unicode>~11~Qđ in dieb ieiunii elemo¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l41" custom="readingOrder {index:19;}">
+                <Coords points="302,1703 382,1706 425,1689 478,1701 577,1681 615,1705 642,1688 686,1693 686,1656 625,1628 573,1648 488,1625 447,1644 418,1624 380,1622 303,1640"/>
+                <Baseline points="311,1672 337,1673 363,1673 389,1673 415,1673 442,1673 468,1674 494,1674 520,1674 546,1674 573,1675 599,1675 625,1676 651,1676 678,1677"/>
+                <TextEquiv>
+                    <Unicode>sina sit facienda</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666759626_87" custom="readingOrder {index:20;}">
+                <Coords points="234,1706 434,1691 473,1715 547,1684 583,1711 745,1716 778,1690 817,1706 817,1724 812,1765 710,1755 615,1797 498,1750 383,1772 320,1746 235,1749"/>
+                <Baseline points="235,1742 241,1742 274,1742 308,1742 341,1742 374,1742 408,1743 441,1743 475,1744 508,1744 541,1745 575,1745 608,1746 642,1747 675,1747 708,1747 742,1748 775,1748 809,1749"/>
+                <TextEquiv>
+                    <Unicode>~12~Ut in xlma tēpus prandii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l45" custom="readingOrder {index:21;}">
+                <Coords points="306,1831 363,1820 426,1838 464,1822 519,1826 539,1846 577,1842 589,1837 591,1773 512,1787 468,1762 440,1763 424,1777 405,1770 386,1784 307,1776"/>
+                <Baseline points="315,1812 341,1811 368,1812 395,1812 421,1813 448,1813 475,1814 501,1815 528,1816 555,1816 582,1816"/>
+                <TextEquiv>
+                    <Unicode>conseruetur</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666743842_63" custom="readingOrder {index:22;}">
+                <Coords points="241,1858 809,1856 810,1896 241,1915"/>
+                <Baseline points="241,1888 249,1888 312,1888 375,1888 438,1888 501,1889 563,1889 626,1889 689,1889 752,1890 810,1890"/>
+                <TextEquiv>
+                    <Unicode>~13~Qđ in dieb ieiuniorū nul¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~i~INCIPIUNT CAPITULA
+TERCII DECIMI LIBRI
+DE IEIVNIO
+~1~De obseruatione qᷓdrages̅
+~2~De ieiunio quatuor tēpoꝝ
+~3~Quo tēpore ad missā flec¬
+tamus genua dici debeat
+~4~De illis qui indictū ieiuniv̄
+contēpserint
+~5~De eadem re seruanda sit
+~6~De lętania maiore qͦmͦͦ ob
+~7~De ieiunio rogationū
+~8~Vt in cęna dn̅i ut in reliqͥs
+xlmę dieb ieiuniū n̅ soluat
+~9~Vt in sabbato sc̅o ieiuniū an¬
+te nocti sinitiū n̅ soluat
+~10~Qđ n̅ oporteat in xlma
+natalicia sc̅oꝝ celebrari
+~11~Qđ in dieb ieiunii elemo¬
+sina sit facienda
+~12~Ut in xlma tēpus prandii
+conseruetur
+~13~Qđ in dieb ieiuniorū nul¬</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666793351_152" custom="readingOrder {index:2;} structure {type:chapter_count;}">
+            <Coords points="124,435 239,435 245,579 124,579"/>
+            <TextLine id="line_1654666792262_148" custom="readingOrder {index:0;}">
+                <Coords points="215,498 220,540 231,538 220,540 241,545 221,548 233,571 196,571 148,550"/>
+                <Baseline points="224,551 186,554 213,551"/>
+                <TextEquiv>
+                    <Unicode>~1~i</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~1~i</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666792242_144" custom="readingOrder {index:3;} structure {type:chapter_count;}">
+            <Coords points="124,579 245,579 248,632 124,632"/>
+            <TextLine id="line_1654666792262_149" custom="readingOrder {index:0;}">
+                <Coords points="172,579 217,579 222,632 176,632"/>
+                <Baseline points="182,614 212,612"/>
+                <TextEquiv>
+                    <Unicode>~2~ii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~2~ii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666790658_138" custom="readingOrder {index:4;} structure {type:chapter_count;}">
+            <Coords points="124,632 248,632 252,704 124,704"/>
+            <TextLine id="line_1654627128993_967" custom="readingOrder {index:0;}">
+                <Coords points="180,636 223,636 223,686 180,686"/>
+                <Baseline points="180,681 223,681"/>
+                <TextEquiv>
+                    <Unicode>~3~iii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~3~iii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666789430_134" custom="readingOrder {index:5;} structure {type:chapter_count;}">
+            <Coords points="124,704 252,704 253,720 253,835 124,835"/>
+            <TextLine id="r2l16" custom="readingOrder {index:0;}">
+                <Coords points="158,816 184,811 194,814 198,810 202,813 231,805 225,719 212,723 198,719 191,727 180,727 173,722 164,725 151,722"/>
+                <Baseline points="165,801 194,799 223,797"/>
+                <TextEquiv>
+                    <Unicode>~4~iiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~4~iiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666788214_130" custom="readingOrder {index:6;} structure {type:chapter_count;}">
+            <Coords points="124,835 253,835 253,886 251,957 124,957"/>
+            <TextLine id="line_1654666787308_128" custom="readingOrder {index:0;}">
+                <Coords points="179,869 189,876 194,871 211,870 217,957 173,957 167,872"/>
+                <Baseline points="180,942 208,940"/>
+                <TextEquiv>
+                    <Unicode>~5~v</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~5~v</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666787264_124" custom="readingOrder {index:7;} structure {type:chapter_count;}">
+            <Coords points="124,957 251,957 249,1032 124,1032"/>
+            <TextLine id="r2l24" custom="readingOrder {index:0;}">
+                <Coords points="162,1016 190,1023 204,1024 212,1021 218,1026 223,1021 234,1022 236,959 225,960 211,974 201,972 190,975 178,968 164,969"/>
+                <Baseline points="170,1013 198,1015 226,1015"/>
+                <TextEquiv>
+                    <Unicode>~6~vi</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~6~vi</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666786024_120" custom="readingOrder {index:8;} structure {type:chapter_count;}">
+            <Coords points="124,1032 249,1032 248,1115 124,1115"/>
+            <TextLine id="r2l26" custom="readingOrder {index:0;}">
+                <Coords points="162,1101 170,1101 182,1108 198,1105 203,1109 204,1107 209,1109 220,1100 228,1100 230,1064 222,1064 217,1068 204,1066 201,1063 195,1063 181,1051 164,1055"/>
+                <Baseline points="171,1092 196,1094 221,1094"/>
+                <TextEquiv>
+                    <Unicode>~7~vii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~7~vii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666784800_116" custom="readingOrder {index:9;} structure {type:chapter_count;}">
+            <Coords points="124,1115 248,1115 247,1227 124,1227"/>
+            <TextLine id="r2l29" custom="readingOrder {index:0;}">
+                <Coords points="155,1186 170,1185 187,1189 190,1186 201,1188 208,1183 210,1186 220,1185 226,1192 234,1192 237,1139 214,1133 198,1143 192,1137 183,1142 179,1137 169,1138 167,1134 159,1134"/>
+                <Baseline points="164,1165 196,1167 228,1169"/>
+                <TextEquiv>
+                    <Unicode>~8~viii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~8~viii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666782876_112" custom="readingOrder {index:10;} structure {type:chapter_count;}">
+            <Coords points="124,1227 247,1227 247,1266 272,1339 252,1420 124,1420"/>
+            <TextLine id="line_1654666759628_88" custom="readingOrder {index:0;}">
+                <Coords points="150,1278 229,1281 247,1263 247,1266 260,1303 260,1322 149,1319"/>
+                <Baseline points="157,1305 205,1306 253,1307 260,1307"/>
+                <TextEquiv>
+                    <Unicode>~9~viiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~9~viiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666781358_108" custom="readingOrder {index:11;} structure {type:chapter_count;}">
+            <Coords points="124,1420 252,1420 232,1506 232,1514 124,1514"/>
+            <TextLine id="line_1654625999030_769" custom="readingOrder {index:0;}">
+                <Coords points="167,1429 225,1445 233,1439 233,1472 231,1471 166,1471"/>
+                <Baseline points="174,1460 203,1461 233,1462"/>
+                <TextEquiv>
+                    <Unicode>~10~x</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~10~x</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666780327_104" custom="readingOrder {index:12;} structure {type:chapter_count;}">
+            <Coords points="124,1514 232,1514 233,1657 124,1657"/>
+            <TextLine id="line_1654666759628_91" custom="readingOrder {index:0;}">
+                <Coords points="216,1546 232,1550 233,1614 208,1607 141,1628 142,1567"/>
+                <Baseline points="150,1595 181,1597 213,1598 233,1598"/>
+                <TextEquiv>
+                    <Unicode>~11~xi</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~11~xi</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666779574_100" custom="readingOrder {index:13;} structure {type:chapter_count;}">
+            <Coords points="124,1657 233,1657 235,1809 124,1809"/>
+            <TextLine id="line_1654626184845_801" custom="readingOrder {index:0;}">
+                <Coords points="133,1716 231,1707 231,1750 133,1755"/>
+                <Baseline points="141,1743 174,1742 207,1742 231,1742"/>
+                <TextEquiv>
+                    <Unicode>~12~xii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~12~xii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666778876_96" custom="readingOrder {index:14;} structure {type:chapter_count;}">
+            <Coords points="124,1809 235,1809 237,1910 124,1910"/>
+            <TextLine id="line_1654666759629_92" custom="readingOrder {index:0;}">
+                <Coords points="117,1859 236,1858 237,1915 117,1919"/>
+                <Baseline points="124,1888 186,1888 237,1888"/>
+                <TextEquiv>
+                    <Unicode>~13~xiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~13~xiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666743804_51" custom="readingOrder {index:15;} structure {type:column_2;}">
+            <Coords points="849,278 1429,278 1429,1910 811,1910 808,1813 838,1517 809,1429 832,1404 823,1266 859,1267 878,1191 818,1186 820,1070 832,909 820,851 859,802 847,495 805,457 806,411 861,396"/>
+            <TextLine id="r2l3" custom="readingOrder {index:0;}">
+                <Coords points="875,393 956,392 1018,412 1046,390 1085,405 1164,388 1331,396 1349,392 1350,319 1306,322 1274,346 1230,323 1161,334 1095,310 1034,340 978,343 949,324 875,338"/>
+                <Baseline points="883,382 908,381 933,380 959,380 984,379 1010,379 1035,379 1061,378 1086,378 1112,378 1137,378 1162,378 1188,378 1213,379 1239,379 1264,381 1290,382 1315,383 1341,384"/>
+                <TextEquiv>
+                    <Unicode>la iurgia ee̅ debeant</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l5" custom="readingOrder {index:1;}">
+                <Coords points="817,459 931,483 988,463 1095,475 1207,458 1312,477 1378,467 1379,396 1188,388 1149,421 1053,398 1029,414 817,415"/>
+                <Baseline points="825,456 852,455 879,454 906,453 934,453 961,453 988,453 1015,452 1043,453 1070,453 1097,453 1124,453 1152,454 1179,454 1206,455 1233,456 1261,456 1288,457 1315,458 1342,459 1370,460"/>
+                <TextEquiv>
+                    <Unicode>~14~Ut in illis sacratis dieb ie¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l7" custom="readingOrder {index:2;}">
+                <Coords points="867,546 925,571 962,539 1080,528 1150,566 1286,537 1356,568 1436,565 1438,494 1345,466 1214,493 1160,470 1019,500 952,480 868,488"/>
+                <Baseline points="875,527 902,528 930,528 958,528 985,529 1013,529 1041,529 1068,530 1096,530 1124,530 1152,530 1179,531 1207,531 1235,532 1262,532 1290,533 1318,534 1345,535 1373,537 1401,538 1429,540"/>
+                <TextEquiv>
+                    <Unicode>iuniorū c̅iugati a c̅iugib</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l9" custom="readingOrder {index:3;}">
+                <Coords points="868,605 984,618 1074,605 1217,650 1285,611 1352,617 1352,561 1297,549 1255,568 1228,551 1116,569 1080,557 1064,571 1000,541 928,570 868,547"/>
+                <Baseline points="876,599 902,599 928,599 954,599 980,599 1006,599 1032,599 1058,599 1084,599 1110,598 1136,598 1162,598 1188,598 1214,599 1240,599 1266,600 1292,600 1318,601 1345,602"/>
+                <TextEquiv>
+                    <Unicode>se abstinere debeant</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l12" custom="readingOrder {index:4;}">
+                <Coords points="862,683 1148,702 1214,679 1297,693 1349,679 1415,699 1416,630 1189,648 1133,615 1084,646 991,648 921,624 862,639"/>
+                <Baseline points="870,672 896,673 923,674 950,674 977,675 1004,675 1031,675 1057,676 1084,676 1111,676 1138,676 1165,677 1192,677 1219,677 1245,677 1272,678 1299,678 1326,678 1353,679 1380,679 1407,680"/>
+                <TextEquiv>
+                    <Unicode>~15~De his qui in clęro sunt et</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l15" custom="readingOrder {index:5;}">
+                <Coords points="877,774 1011,788 1036,770 1097,780 1129,760 1330,772 1362,760 1363,683 1299,719 1214,709 1190,688 1145,705 878,716"/>
+                <Baseline points="885,744 911,745 937,745 963,746 989,746 1015,747 1041,747 1067,747 1093,748 1119,748 1145,748 1171,748 1197,749 1223,749 1249,749 1275,750 1301,750 1327,750 1354,751"/>
+                <TextEquiv>
+                    <Unicode>carniū esū habuerint</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l18" custom="readingOrder {index:6;}">
+                <Coords points="879,838 892,838 906,826 963,835 971,827 1044,832 1063,823 1074,833 1085,830 1086,797 1058,801 1042,788 1014,792 997,781 968,780 956,789 937,778 904,791 880,780"/>
+                <Baseline points="888,819 915,819 942,819 969,820 996,821 1023,821 1050,822 1078,823"/>
+                <TextEquiv>
+                    <Unicode>exosum</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l20" custom="readingOrder {index:7;}">
+                <Coords points="850,899 919,907 943,924 984,920 1013,938 1083,903 1150,929 1193,914 1254,921 1255,836 1190,867 1114,853 1086,830 966,837 851,818"/>
+                <Baseline points="858,889 883,891 909,892 935,893 961,894 987,894 1013,895 1039,895 1065,896 1091,896 1117,896 1143,896 1169,896 1195,896 1221,896 1247,896"/>
+                <TextEquiv>
+                    <Unicode>~16~De uigiliis sc̅orum</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l23" custom="readingOrder {index:8;}">
+                <Coords points="834,963 897,977 940,970 962,988 1008,970 1055,979 1083,970 1129,975 1130,937 1081,933 1056,915 1010,936 981,915 944,925 912,907 872,915"/>
+                <Baseline points="880,959 906,960 933,961 960,962 987,962 1013,962 1040,963 1067,964 1094,964 1121,966"/>
+                <TextEquiv>
+                    <Unicode>~17~De eadem re</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654625595681_707" custom="readingOrder {index:9;}">
+                <Coords points="828,965 1118,1012 1405,988 1404,1057 828,1050"/>
+                <Baseline points="828,1033 833,1034 889,1035 946,1036 1002,1037 1058,1038 1114,1039 1171,1041 1227,1042 1283,1043 1339,1044 1396,1045"/>
+                <TextEquiv>
+                    <Unicode>~18~De hoc si euenerit pestilen¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l28" custom="readingOrder {index:10;}">
+                <Coords points="833,1118 913,1118 961,1142 1056,1124 1194,1133 1213,1117 1317,1130 1329,1066 1266,1074 1164,1046 1101,1048 1065,1070 1010,1045 960,1046 833,1079"/>
+                <Baseline points="840,1108 865,1107 890,1107 915,1107 941,1107 966,1108 991,1108 1016,1108 1042,1109 1067,1110 1092,1110 1117,1111 1143,1111 1168,1112 1193,1112 1218,1112 1244,1113 1269,1113 1294,1112 1320,1112"/>
+                <TextEquiv>
+                    <Unicode>tia ꝉ in ęqᷓlitas aeris</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666743848_65" custom="readingOrder {index:11;}">
+                <Coords points="837,1132 894,1120 1016,1143 1122,1121 1148,1143 1236,1133 1258,1154 1397,1138 1396,1201 1277,1184 922,1202 869,1171 843,1188 836,1187"/>
+                <Baseline points="844,1175 871,1176 898,1176 925,1177 952,1177 980,1178 1007,1178 1034,1178 1061,1179 1088,1179 1116,1179 1143,1179 1170,1179 1197,1179 1224,1180 1252,1180 1279,1181 1306,1181 1333,1182 1360,1183 1388,1183"/>
+                <TextEquiv>
+                    <Unicode>~19~Vt nullus in die dominica</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666743849_67" custom="readingOrder {index:12;}">
+                <Coords points="874,1203 899,1216 995,1188 1349,1217 1348,1272 1158,1250 1098,1281 872,1273 872,1215"/>
+                <Baseline points="872,1244 875,1245 927,1246 979,1247 1030,1247 1082,1248 1134,1248 1185,1249 1237,1249 1289,1249 1341,1248"/>
+                <TextEquiv>
+                    <Unicode>ꝓ abstinentia ieiunet</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654667123519_368" custom="readingOrder {index:13;}">
+                <Coords points="837,1275 1124,1278 1124,1328 837,1325"/>
+                <Baseline points="837,1320 1124,1323"/>
+                <TextEquiv>
+                    <Unicode>~20~De eadem re</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654667135508_374" custom="readingOrder {index:14;}">
+                <Coords points="843,1354 1391,1349 1391,1399 843,1404"/>
+                <Baseline points="843,1399 1391,1394"/>
+                <TextEquiv>
+                    <Unicode> </Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666743853_71" custom="readingOrder {index:15;}">
+                <Coords points="814,1436 901,1439 939,1402 1030,1440 1145,1413 1382,1411 1382,1482 1225,1491 1118,1474 1041,1492 998,1475 948,1500 826,1482 814,1444"/>
+                <Baseline points="823,1473 849,1473 877,1472 904,1472 932,1471 960,1471 987,1470 1015,1470 1043,1470 1070,1470 1098,1470 1126,1470 1153,1470 1181,1470 1209,1470 1236,1470 1264,1471 1292,1471 1319,1471 1347,1472 1375,1472"/>
+                <TextEquiv>
+                    <Unicode>~21~Ut placita scꝉaria in dieb</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l38" custom="readingOrder {index:16;}">
+                <Coords points="865,1560 926,1540 1031,1562 1083,1540 1137,1570 1177,1548 1262,1559 1354,1544 1354,1499 1269,1510 1217,1485 1116,1507 1023,1477 934,1511 904,1496 865,1504"/>
+                <Baseline points="873,1537 899,1537 925,1538 951,1538 978,1539 1004,1539 1030,1539 1056,1539 1083,1539 1109,1539 1135,1539 1162,1538 1188,1538 1214,1538 1240,1538 1267,1538 1293,1538 1319,1538 1346,1539"/>
+                <TextEquiv>
+                    <Unicode>dominicis et in p̄cipuis</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l40" custom="readingOrder {index:17;}">
+                <Coords points="867,1622 1187,1611 1386,1639 1387,1579 1365,1573 1256,1579 1173,1556 1146,1571 1096,1553 1011,1574 957,1543 868,1557"/>
+                <Baseline points="876,1605 901,1605 926,1606 951,1606 976,1606 1001,1606 1026,1606 1051,1606 1076,1606 1101,1606 1127,1606 1152,1606 1177,1607 1202,1607 1227,1608 1252,1609 1277,1609 1302,1611 1327,1612 1352,1613 1378,1615"/>
+                <TextEquiv>
+                    <Unicode>festis et in dieb ieiunioꝝ</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l42" custom="readingOrder {index:18;}">
+                <Coords points="861,1703 927,1682 988,1698 1007,1684 1032,1705 1067,1707 1109,1690 1110,1652 1092,1654 1077,1641 1056,1650 1020,1648 997,1632 948,1627 920,1614 898,1623 862,1617"/>
+                <Baseline points="868,1678 893,1677 919,1677 945,1677 971,1678 997,1678 1023,1679 1049,1679 1075,1679 1101,1679"/>
+                <TextEquiv>
+                    <Unicode>non fiant</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654666743855_72" custom="readingOrder {index:19;}">
+                <Coords points="817,1715 920,1715 966,1690 1057,1710 1099,1690 1244,1706 1304,1673 1387,1707 1387,1764 1332,1775 1211,1751 1124,1772 1091,1753 813,1761"/>
+                <Baseline points="820,1751 848,1750 876,1749 904,1748 932,1748 960,1748 988,1747 1016,1747 1044,1747 1072,1747 1100,1748 1128,1748 1156,1748 1184,1749 1212,1749 1240,1749 1268,1749 1296,1749 1324,1749 1352,1749 1380,1749"/>
+                <TextEquiv>
+                    <Unicode>~22~Vt ieiuniū absq cibo luxu¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r2l46" custom="readingOrder {index:20;}">
+                <Coords points="860,1855 900,1864 948,1839 1045,1849 1078,1833 1107,1849 1174,1828 1203,1844 1346,1840 1346,1771 1316,1778 1299,1763 1268,1776 1172,1749 1050,1789 1008,1768 937,1790 860,1770"/>
+                <Baseline points="868,1818 894,1819 920,1819 946,1819 972,1820 998,1820 1024,1820 1050,1820 1076,1820 1103,1820 1129,1821 1155,1821 1181,1821 1207,1821 1233,1821 1259,1821 1285,1822 1311,1822 1338,1822"/>
+                <TextEquiv>
+                    <Unicode>rię obseruari debeat</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="line_1654626321466_850" custom="readingOrder {index:21;}">
+                <Coords points="814,1856 1389,1854 1389,1898 1274,1937 1019,1939 909,1894 814,1896"/>
+                <Baseline points="814,1890 815,1890 878,1890 941,1891 1003,1891 1066,1891 1129,1892 1192,1892 1255,1893 1318,1893 1381,1894"/>
+                <TextEquiv>
+                    <Unicode>~23~Ut cottidianū ieiuniū n̅ sit</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>la iurgia ee̅ debeant
+~14~Ut in illis sacratis dieb ie¬
+iuniorū c̅iugati a c̅iugib
+se abstinere debeant
+~15~De his qui in clęro sunt et
+carniū esū habuerint
+exosum
+~16~De uigiliis sc̅orum
+~17~De eadem re
+~18~De hoc si euenerit pestilen¬
+tia ꝉ in ęqᷓlitas aeris
+~19~Vt nullus in die dominica
+ꝓ abstinentia ieiunet
+~20~De eadem re
+ 
+~21~Ut placita scꝉaria in dieb
+dominicis et in p̄cipuis
+festis et in dieb ieiunioꝝ
+non fiant
+~22~Vt ieiuniū absq cibo luxu¬
+rię obseruari debeat
+~23~Ut cottidianū ieiuniū n̅ sit</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="region_1654627337212_1004" custom="readingOrder {index:16;} structure {type:chapter_count;}">
+            <Coords points="1445,418 1445,470 1522,470 1522,418"/>
+            <TextLine id="line_1654627337279_1007" custom="readingOrder {index:0;}">
+                <Coords points="1445,420 1521,418 1522,468 1446,470"/>
+                <Baseline points="1446,465 1522,463"/>
+                <TextEquiv>
+                    <Unicode>~14~xiiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~14~xiiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="region_1654627365456_1013" custom="readingOrder {index:17;} structure {type:chapter_count;}">
+            <Coords points="1445,637 1445,688 1521,688 1521,637"/>
+            <TextLine id="line_1654627365528_1016" custom="readingOrder {index:0;}">
+                <Coords points="1445,638 1520,637 1521,687 1446,688"/>
+                <Baseline points="1446,683 1521,682"/>
+                <TextEquiv>
+                    <Unicode>~15~xv</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~15~xv</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666697964_36" custom="readingOrder {index:18;} structure {type:chapter_count;}">
+            <Coords points="1435,848 1559,848 1559,918 1435,918"/>
+            <TextLine id="line_1654666698016_39" custom="readingOrder {index:0;}">
+                <Coords points="1426,852 1436,851 1453,862 1497,834 1533,837 1533,918 1426,918"/>
+                <Baseline points="1435,890 1465,888 1495,887 1525,890"/>
+                <TextEquiv>
+                    <Unicode>~16~xvi</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~16~xvi</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666697963_35" custom="readingOrder {index:19;} structure {type:chapter_count;}">
+            <Coords points="1435,918 1559,918 1559,998 1435,998"/>
+            <TextLine id="r3l2" custom="readingOrder {index:0;}">
+                <Coords points="1429,993 1453,995 1467,983 1486,996 1516,993 1530,979 1538,979 1539,934 1528,935 1523,930 1501,944 1482,931 1465,931 1451,942 1430,941"/>
+                <Baseline points="1437,969 1468,967 1499,968 1530,970"/>
+                <TextEquiv>
+                    <Unicode>~17~xvii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~17~xvii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666696815_29" custom="readingOrder {index:20;} structure {type:chapter_count;}">
+            <Coords points="1435,998 1559,998 1559,1091 1435,1091"/>
+            <TextLine id="line_1654666696832_32" custom="readingOrder {index:0;}">
+                <Coords points="1440,1002 1470,1006 1478,998 1554,998 1554,1055 1511,1061 1492,1050 1480,1055 1440,1050"/>
+                <Baseline points="1448,1046 1480,1046 1513,1046 1546,1046"/>
+                <TextEquiv>
+                    <Unicode>~18~xviii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~18~xviii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666693019_25" custom="readingOrder {index:21;} structure {type:chapter_count;}">
+            <Coords points="1435,1091 1559,1091 1559,1234 1435,1234"/>
+            <TextLine id="r3l4" custom="readingOrder {index:0;}">
+                <Coords points="1433,1195 1455,1196 1469,1189 1493,1200 1504,1190 1522,1188 1538,1193 1549,1186 1566,1187 1565,1146 1544,1150 1533,1158 1496,1149 1482,1154 1470,1147 1457,1147 1449,1139 1432,1138"/>
+                <Baseline points="1440,1184 1469,1182 1499,1181 1529,1181 1559,1181"/>
+                <TextEquiv>
+                    <Unicode>~19~xviiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~19~xviiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666692415_21" custom="readingOrder {index:22;} structure {type:chapter_count;}">
+            <Coords points="1435,1234 1559,1234 1559,1384 1435,1384"/>
+            <TextLine id="r3l5" custom="readingOrder {index:0;}">
+                <Coords points="1443,1332 1452,1330 1455,1327 1457,1329 1509,1330 1501,1298 1451,1296 1448,1302 1437,1304"/>
+                <Baseline points="1449,1323 1459,1321"/>
+                <TextEquiv>
+                    <Unicode>~20~xx</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~20~xx</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666691677_17" custom="readingOrder {index:23;} structure {type:chapter_count;}">
+            <Coords points="1435,1384 1559,1384 1559,1587 1435,1587"/>
+            <TextLine id="r3l6" custom="readingOrder {index:0;}">
+                <Coords points="1431,1481 1446,1487 1473,1486 1481,1495 1488,1491 1512,1503 1529,1502 1541,1428 1502,1417 1487,1423 1480,1417 1461,1425 1439,1424"/>
+                <Baseline points="1440,1475 1468,1477 1496,1482 1524,1487"/>
+                <TextEquiv>
+                    <Unicode>~21~xxi</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~21~xxi</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654666690468_13" custom="readingOrder {index:24;} structure {type:chapter_count;}">
+            <Coords points="1435,1587 1559,1587 1559,1781 1435,1781"/>
+            <TextLine id="r3l7" custom="readingOrder {index:0;}">
+                <Coords points="1427,1767 1441,1766 1453,1771 1473,1766 1486,1755 1498,1762 1504,1757 1514,1763 1523,1758 1539,1762 1541,1709 1530,1710 1516,1704 1494,1708 1488,1702 1477,1701 1461,1707 1450,1697 1430,1698"/>
+                <Baseline points="1436,1748 1467,1748 1499,1750 1531,1751"/>
+                <TextEquiv>
+                    <Unicode>~22~xxii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~22~xxii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="region_1654627394655_1022" custom="readingOrder {index:25;} structure {type:chapter_count;}">
+            <Coords points="1445,1860 1445,1912 1532,1912 1532,1860"/>
+            <TextLine id="line_1654627394708_1025" custom="readingOrder {index:0;}">
+                <Coords points="1445,1862 1531,1860 1532,1910 1446,1912"/>
+                <Baseline points="1446,1907 1532,1905"/>
+                <TextEquiv>
+                    <Unicode>~23~xxiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~23~xxiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

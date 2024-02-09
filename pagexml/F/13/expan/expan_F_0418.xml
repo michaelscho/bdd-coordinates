@@ -2,7 +2,7 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2024-02-07 16:54:32.109469</Created>
+        <Created>2024-02-09 11:41:29.044662</Created>
         <LastChange>2022-06-24T23:00:28.209+02:00</LastChange>
         </Metadata>
     <Page imageFilename="F_0418.jpg" imageWidth="3089" imageHeight="4492">
@@ -32,7 +32,7 @@
                 <Coords points="384,2255 518,2274 569,2251 598,2274 629,2253 692,2275 768,2241 803,2250 799,2152 637,2157 592,2182 541,2171 512,2194 380,2153"/>
                 <Baseline points="390,2246 415,2246 440,2246 465,2246 491,2246 516,2245 541,2244 567,2242 592,2241 617,2239 643,2238 668,2237 693,2235 719,2235 744,2235 769,2234 795,2235"/>
                 <TextEquiv>
-                    <Unicode>Ex concilio apud Erphes</Unicode>
+                    <Unicode>Ex concilio apud Erphes¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_inscription_01_l_02" custom="readingOrder {index:1;}">
@@ -90,7 +90,7 @@
                 <Coords points="861,680 1138,613 1400,661 1478,620 1886,637 1886,552 1688,528 1617,561 1430,521 1369,548 1264,527 1211,566 1051,518 960,557 861,544"/>
                 <Baseline points="867,617 917,615 968,615 1018,614 1069,614 1120,614 1170,614 1221,614 1272,614 1322,614 1373,614 1424,614 1474,614 1525,614 1576,614 1626,614 1677,614 1728,614 1778,612 1829,612 1880,611"/>
                 <TextEquiv>
-                    <Unicode>gerebat nihil cibi uolens accipe</Unicode>
+                    <Unicode>gerebat nihil cibi uolens accipe¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_02" custom="readingOrder {index:1;}">
@@ -153,7 +153,7 @@
                 <Coords points="867,1583 1374,1592 1539,1552 1656,1602 1741,1598 1840,1558 1839,1476 1568,1515 1454,1479 1370,1513 1289,1477 1091,1485 999,1454 866,1504"/>
                 <Baseline points="873,1553 921,1553 969,1553 1017,1553 1065,1553 1113,1551 1161,1551 1209,1550 1257,1550 1305,1549 1353,1548 1401,1548 1449,1547 1497,1547 1545,1547 1593,1547 1641,1547 1689,1547 1737,1547 1785,1548 1833,1548"/>
                 <TextEquiv>
-                    <Unicode>alcibiades cępit omnia cum grat</Unicode>
+                    <Unicode>alcibiades cępit omnia cum grat¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_11" custom="readingOrder {index:10;}">
@@ -216,14 +216,14 @@
                 <Coords points="888,2471 977,2454 1051,2485 1173,2440 1418,2490 1492,2445 1827,2444 1827,2393 1741,2397 1643,2347 1533,2393 1351,2361 1217,2397 888,2369"/>
                 <Baseline points="894,2439 940,2438 986,2438 1033,2438 1079,2436 1125,2436 1172,2436 1218,2436 1264,2436 1311,2436 1357,2436 1403,2436 1450,2436 1496,2436 1542,2436 1589,2436 1635,2436 1681,2436 1728,2435 1774,2434 1821,2433"/>
                 <TextEquiv>
-                    <Unicode>sub optentu religionis sibi im</Unicode>
+                    <Unicode>sub optentu religionis sibi im¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_20" custom="readingOrder {index:19;}">
                 <Coords points="872,2567 953,2541 1308,2573 1378,2543 1422,2572 1574,2548 1758,2574 1851,2535 1835,2477 1721,2491 1499,2445 1417,2490 1327,2454 1196,2494 872,2487"/>
                 <Baseline points="878,2531 926,2531 974,2531 1022,2531 1071,2529 1119,2529 1167,2531 1216,2531 1264,2531 1312,2531 1361,2531 1409,2531 1457,2529 1505,2529 1554,2529 1602,2529 1650,2528 1699,2526 1747,2526 1795,2525 1844,2523"/>
                 <TextEquiv>
-                    <Unicode>ponat unum diem prae aliis excipi</Unicode>
+                    <Unicode>ponat unum diem prae aliis excipi¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_21" custom="readingOrder {index:20;}">
@@ -237,7 +237,7 @@
                 <Coords points="885,2745 1197,2726 1378,2758 1603,2729 1722,2754 1818,2737 1818,2637 1684,2687 1476,2681 1412,2647 1208,2674 885,2653"/>
                 <Baseline points="891,2726 937,2724 983,2723 1029,2723 1075,2722 1121,2721 1167,2721 1213,2721 1259,2721 1305,2721 1351,2721 1397,2721 1443,2721 1489,2721 1535,2721 1581,2721 1627,2721 1673,2721 1719,2720 1765,2720 1812,2718"/>
                 <TextEquiv>
-                    <Unicode>quod et factum displicet et in fu</Unicode>
+                    <Unicode>quod et factum displicet et in fu¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_23" custom="readingOrder {index:22;}">
@@ -251,14 +251,14 @@
                 <Coords points="884,2957 1051,2919 1847,2923 1847,2857 1732,2832 1675,2861 1539,2833 1487,2854 1422,2825 1344,2864 1201,2838 988,2863 941,2836 884,2870"/>
                 <Baseline points="890,2904 937,2906 985,2907 1032,2908 1080,2909 1127,2909 1175,2910 1222,2910 1270,2910 1317,2910 1365,2910 1413,2910 1460,2910 1508,2910 1555,2909 1603,2909 1650,2909 1698,2909 1745,2907 1793,2907 1841,2907"/>
                 <TextEquiv>
-                    <Unicode>plus causa ariolandi esse dinos</Unicode>
+                    <Unicode>plus causa ariolandi esse dinos¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_25" custom="readingOrder {index:24;}">
                 <Coords points="883,3023 1213,3022 1272,3053 1363,3013 1596,3017 1645,3046 1848,3011 1848,2947 1810,2927 1664,2964 1527,2938 1450,2960 1358,2925 1283,2960 1222,2926 884,2957"/>
                 <Baseline points="890,3006 937,3006 985,3005 1032,3005 1080,3005 1128,3005 1175,3005 1223,3006 1270,3006 1318,3006 1366,3008 1413,3008 1461,3008 1508,3008 1556,3008 1604,3008 1651,3008 1699,3008 1746,3006 1794,3006 1842,3005"/>
                 <TextEquiv>
-                    <Unicode>citur quam supplementum catho</Unicode>
+                    <Unicode>citur quam supplementum catho¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_1_l_26" custom="readingOrder {index:25;}">
@@ -293,7 +293,7 @@
                 <Coords points="894,3506 1057,3500 1181,3543 1455,3507 1883,3535 1884,3434 1467,3458 1228,3406 1149,3459 895,3402"/>
                 <Baseline points="900,3482 948,3486 997,3489 1046,3491 1095,3494 1144,3495 1193,3497 1242,3497 1291,3498 1340,3498 1389,3498 1437,3498 1486,3498 1535,3498 1584,3497 1633,3497 1682,3497 1731,3497 1780,3496 1829,3495 1878,3497"/>
                 <TextEquiv>
-                    <Unicode>Precipimus namque ut nullus christi</Unicode>
+                    <Unicode>Precipimus namque ut nullus christi¬</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -303,14 +303,14 @@
                 <Coords points="1959,621 2117,651 2233,620 2327,645 2468,629 2508,658 2691,628 2795,664 2825,654 2826,601 2661,542 2237,575 2041,518 1960,546"/>
                 <Baseline points="1965,614 2007,616 2050,618 2093,619 2135,620 2178,621 2221,621 2263,621 2306,621 2349,621 2392,621 2434,621 2477,621 2520,621 2562,623 2605,624 2648,625 2690,627 2733,629 2776,633 2819,636"/>
                 <TextEquiv>
-                    <Unicode>anus pro reuerentia ęcclesiam peten</Unicode>
+                    <Unicode>anus pro reuerentia ęcclesiam peten¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_2_l_02" custom="readingOrder {index:1;}">
                 <Coords points="1947,726 2079,725 2162,761 2237,726 2395,724 2591,770 2674,744 2833,778 2836,682 2759,697 2712,666 2634,700 2558,658 2475,684 2435,659 2222,688 2090,647 1948,671"/>
                 <Baseline points="1953,719 1996,720 2040,720 2084,722 2128,722 2171,722 2215,723 2259,723 2303,723 2346,724 2390,725 2434,725 2478,726 2521,728 2565,729 2609,730 2653,732 2696,735 2740,737 2784,740 2828,744"/>
                 <TextEquiv>
-                    <Unicode>do ibique manendo indeque reuerten</Unicode>
+                    <Unicode>do ibique manendo indeque reuerten¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_2_l_03" custom="readingOrder {index:2;}">
@@ -331,7 +331,7 @@
                 <Coords points="1946,1053 2118,1083 2254,1036 2317,1069 2466,1069 2520,1036 2819,1071 2806,965 2621,999 2522,968 2355,990 2228,951 2151,968 2091,938 1947,955"/>
                 <Baseline points="1952,1029 1995,1029 2038,1029 2081,1029 2124,1028 2167,1028 2210,1028 2253,1028 2296,1028 2339,1029 2382,1029 2425,1029 2468,1029 2511,1031 2554,1031 2597,1031 2640,1032 2683,1032 2726,1034 2769,1034 2813,1035"/>
                 <TextEquiv>
-                    <Unicode>dum ad ęcclesiam causa orationis p</Unicode>
+                    <Unicode>dum ad ęcclesiam causa orationis p¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0418_column_2_l_06" custom="readingOrder {index:5;}">

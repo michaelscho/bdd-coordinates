@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator>prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Gundram Leifert/gundram.leifert@planet-ai.de:name=bdd-0.3(htr_id=35757)::::v=2.6.7
+prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=de.uros.citlab.module.baseline2polygon.B2PSeamMultiOriented:v=2.6.7
+prov=University of Rostock/Institute of Mathematics/CITlab|PLANET AI GmbH/Tobias Gruening/tobias.gruening@planet-ai.de:name=/net_tf/LA73_249_0mod360.pb:de.uros.citlab.segmentation.CITlab_LA_ML:v=2.6.7
+Transkribus</Creator>
+        <Created>2021-09-24T09:25:18.017+02:00</Created>
+        <LastChange>2022-06-16T15:00:41.702+02:00</LastChange>
+        <TranskribusMetadata docId="1197208" pageId="48539765" pageNr="178" tsid="98889170" status="FINAL" userId="104427" imgUrl="https://files.transkribus.eu/Get?id=AJXAIRGDRKNLPSSYZOHVHRYL&amp;fileType=view" xmlUrl="https://files.transkribus.eu/Get?id=NXNLYXLAISBZPALDMACWCQFE" imageId="23338786"/>
+    </Metadata>
+    <Page imageFilename="Vb_0178.jpg" imageWidth="1836" imageHeight="2417">
+        <ReadingOrder>
+            <OrderedGroup id="ro_1707477607671" caption="Regions reading order">
+                <RegionRefIndexed index="0" regionRef="TextRegion_1654667640370_609"/>
+                <RegionRefIndexed index="1" regionRef="TextRegion_1654667640370_608"/>
+                <RegionRefIndexed index="2" regionRef="TextRegion_1654667637551_604"/>
+                <RegionRefIndexed index="3" regionRef="TextRegion_1654667636788_600"/>
+                <RegionRefIndexed index="4" regionRef="TextRegion_1654667635908_596"/>
+                <RegionRefIndexed index="5" regionRef="TextRegion_1654628073505_1106"/>
+                <RegionRefIndexed index="6" regionRef="TextRegion_1654628073505_1107"/>
+            </OrderedGroup>
+        </ReadingOrder>
+        <TextRegion orientation="0.0" id="TextRegion_1654667640370_609" custom="readingOrder {index:0;} structure {type:chapter_count;}">
+            <Coords points="233,384 383,384 383,465 233,465"/>
+            <TextLine id="r2l1" custom="readingOrder {index:0;}">
+                <Coords points="242,448 265,453 274,447 287,451 297,444 331,461 337,456 347,461 363,452 375,459 385,457 383,416 345,422 300,401 277,412 263,402 240,401"/>
+                <Baseline points="247,445 273,442 299,440 326,438 352,437 379,438"/>
+                <TextEquiv>
+                    <Unicode>~24~xxiiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~24~xxiiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654667640370_608" custom="readingOrder {index:1;} structure {type:chapter_count;}">
+            <Coords points="233,465 383,465 383,576 233,576"/>
+            <TextLine id="r2l2" custom="readingOrder {index:0;}">
+                <Coords points="230,539 243,534 251,539 258,536 268,540 271,536 288,543 293,537 319,538 326,534 321,483 304,492 286,492 279,486 250,486 238,501 227,505"/>
+                <Baseline points="233,519 261,512 290,511 319,509"/>
+                <TextEquiv>
+                    <Unicode>~25~xxv</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~25~xxv</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654667637551_604" custom="readingOrder {index:2;} structure {type:chapter_count;}">
+            <Coords points="233,576 383,576 383,742 233,742"/>
+            <TextLine id="r2l3" custom="readingOrder {index:0;}">
+                <Coords points="243,680 256,681 269,674 274,678 280,672 302,676 325,665 356,670 355,633 347,634 340,629 329,637 324,634 318,640 309,641 275,631 241,637"/>
+                <Baseline points="247,665 273,663 299,661 325,661 351,661"/>
+                <TextEquiv>
+                    <Unicode>~26~xxvi</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~26~xxvi</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654667636788_600" custom="readingOrder {index:3;} structure {type:chapter_count;}">
+            <Coords points="233,742 383,742 383,994 233,994"/>
+            <TextLine id="r2l4" custom="readingOrder {index:0;}">
+                <Coords points="250,894 264,891 313,897 326,892 343,905 389,905 387,856 351,851 323,854 307,845 283,851 261,842 248,847"/>
+                <Baseline points="254,874 279,873 305,872 331,872 357,871 383,869"/>
+                <TextEquiv>
+                    <Unicode>~27~xxvii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~27~xxvii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654667635908_596" custom="readingOrder {index:4;} structure {type:chapter_count;}">
+            <Coords points="233,994 383,994 383,1290 233,1290"/>
+            <TextLine id="r2l5" custom="readingOrder {index:0;}">
+                <Coords points="232,1169 272,1172 281,1162 298,1164 311,1155 329,1159 341,1154 373,1171 383,1170 382,1128 370,1124 347,1134 305,1111 295,1115 231,1107"/>
+                <Baseline points="237,1155 265,1156 293,1155 321,1154 349,1153 378,1154"/>
+                <TextEquiv>
+                    <Unicode>~28~xxviii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>~28~xxviii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" id="TextRegion_1654628073505_1106" custom="readingOrder {index:5;} structure {type:column_1;}">
+            <Coords points="420,242 1257,242 1255,2386 418,2386"/>
+            <TextLine id="r3l2" custom="readingOrder {index:0;}">
+                <Coords points="474,393 530,374 627,387 649,372 744,386 804,373 844,391 961,372 961,333 890,335 853,311 771,339 658,330 634,314 595,335 474,319"/>
+                <Baseline points="479,361 504,361 529,362 554,363 579,363 604,363 629,363 654,363 679,363 704,363 730,363 755,362 780,362 805,362 830,362 855,361 880,361 905,361 930,361 956,362"/>
+                <TextEquiv>
+                    <Unicode>sine refectione aliqua</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l3" custom="readingOrder {index:1;}">
+                <Coords points="422,451 456,438 465,448 503,444 542,453 549,446 578,461 607,452 651,460 652,411 614,403 597,412 579,396 532,412 489,393 473,395 459,383 423,389"/>
+                <Baseline points="427,432 454,433 481,434 509,435 536,435 563,436 591,436 618,437 646,437"/>
+                <TextEquiv>
+                    <Unicode>~24~De eodem</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l4" custom="readingOrder {index:2;}">
+                <Coords points="422,526 481,542 506,524 763,524 817,506 932,551 996,552 995,476 962,466 659,469 611,485 421,458"/>
+                <Baseline points="427,510 455,510 483,511 511,511 539,512 568,512 596,512 624,511 652,511 680,511 709,511 737,510 765,509 793,509 821,508 850,508 878,507 906,507 934,506 962,506 991,505"/>
+                <TextEquiv>
+                    <Unicode>~25~Qđ ieiuniū curet uulnera</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l5" custom="readingOrder {index:3;}">
+                <Coords points="474,599 542,601 566,586 612,596 637,614 682,597 740,597 784,582 783,516 725,530 689,524 661,550 641,537 604,554 544,536 473,542"/>
+                <Baseline points="479,579 504,579 529,580 554,580 579,580 604,580 629,579 654,579 679,579 704,579 729,578 754,577 779,577"/>
+                <TextEquiv>
+                    <Unicode>delinquentis</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l6" custom="readingOrder {index:4;}">
+                <Coords points="413,658 484,662 519,688 585,659 683,678 794,659 890,677 950,662 949,617 862,626 826,608 766,626 743,606 697,605 648,622 572,597 512,626 412,616"/>
+                <Baseline points="418,657 444,656 470,656 497,655 523,655 549,655 576,655 602,654 628,654 655,654 681,654 707,654 734,654 760,653 786,653 813,653 839,652 865,652 892,651 918,651 945,650"/>
+                <TextEquiv>
+                    <Unicode>~26~De quodā alcibiade qui</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l7" custom="readingOrder {index:5;}">
+                <Coords points="468,733 564,760 619,733 722,736 743,756 789,736 952,739 952,694 936,690 853,693 783,675 732,698 656,679 563,699 468,665"/>
+                <Baseline points="473,725 499,726 525,726 552,726 578,726 604,726 631,726 657,726 683,726 710,725 736,725 762,725 789,724 815,724 841,723 868,723 894,722 920,722 947,721"/>
+                <TextEquiv>
+                    <Unicode>sibi graue iugū ieiuni</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l8" custom="readingOrder {index:6;}">
+                <Coords points="459,803 487,820 502,812 537,826 586,805 622,807 634,817 658,807 684,824 710,827 734,819 735,783 692,762 665,774 619,773 588,760 552,771 541,764 527,772 511,764 459,769"/>
+                <Baseline points="464,797 490,797 517,797 543,796 570,797 597,797 623,797 650,798 676,799 703,800 730,801"/>
+                <TextEquiv>
+                    <Unicode>imposuerat</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l9" custom="readingOrder {index:7;}">
+                <Coords points="419,873 678,889 723,875 752,891 985,874 971,824 888,846 841,818 659,838 452,814 419,825"/>
+                <Baseline points="424,867 451,867 479,867 507,867 535,867 563,867 590,868 618,868 646,868 674,868 702,869 729,869 757,869 785,869 813,869 841,869 868,869 896,869 924,868 952,868 980,867"/>
+                <TextEquiv>
+                    <Unicode>~27~De eo qui sub optentu re¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l10" custom="readingOrder {index:8;}">
+                <Coords points="471,956 513,971 579,934 652,950 862,943 881,959 986,948 986,900 959,893 860,911 807,890 724,912 648,893 599,910 505,887 471,900"/>
+                <Baseline points="476,936 501,935 526,935 551,935 577,934 602,935 627,935 652,935 678,935 703,936 728,936 753,936 779,936 804,936 829,936 854,936 880,936 905,936 930,935 955,934 981,933"/>
+                <TextEquiv>
+                    <Unicode>ligionis sine iussu ep̅i sui</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l11" custom="readingOrder {index:9;}">
+                <Coords points="465,1021 914,1030 965,1018 965,981 866,964 812,985 726,972 659,984 603,963 537,963 510,985 465,978"/>
+                <Baseline points="470,1007 495,1007 521,1007 547,1007 573,1008 598,1008 624,1008 650,1008 676,1008 702,1009 727,1009 753,1009 779,1010 805,1010 831,1010 856,1010 882,1010 908,1010 934,1009 960,1009"/>
+                <TextEquiv>
+                    <Unicode>uel pƀri ieiuniū sibi im¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l12" custom="readingOrder {index:10;}">
+                <Coords points="473,1096 500,1098 512,1090 519,1094 580,1094 608,1081 621,1084 621,1049 606,1051 597,1043 577,1051 538,1034 514,1036 497,1049 489,1045 473,1048"/>
+                <Baseline points="478,1080 505,1080 533,1080 560,1080 588,1080 616,1080"/>
+                <TextEquiv>
+                    <Unicode>ponit</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l13" custom="readingOrder {index:11;}">
+                <Coords points="428,1174 497,1156 685,1173 983,1156 983,1117 952,1104 717,1125 577,1101 514,1124 428,1107"/>
+                <Baseline points="433,1148 460,1148 487,1149 514,1149 542,1149 569,1150 596,1150 623,1150 651,1150 678,1150 705,1150 732,1149 760,1149 787,1149 814,1149 841,1149 869,1149 896,1150 923,1150 950,1150 978,1150"/>
+                <TextEquiv>
+                    <Unicode>~28~Ut nullus xp̅ianus dū sc̅a</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l14" custom="readingOrder {index:12;}">
+                <Coords points="467,1225 560,1226 591,1243 638,1223 695,1245 798,1227 876,1244 909,1224 964,1233 964,1190 949,1187 586,1196 467,1174"/>
+                <Baseline points="472,1219 497,1219 523,1220 548,1220 574,1220 600,1220 625,1220 651,1220 677,1220 702,1219 728,1219 753,1219 779,1219 805,1219 830,1219 856,1219 882,1218 907,1218 933,1218 959,1218"/>
+                <TextEquiv>
+                    <Unicode>loca ꝓ reuerentia petie¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l15" custom="readingOrder {index:13;}">
+                <Coords points="475,1302 664,1298 750,1315 775,1302 823,1327 859,1307 940,1311 941,1263 899,1251 857,1267 784,1242 748,1262 710,1251 674,1268 476,1256"/>
+                <Baseline points="480,1289 505,1289 530,1290 555,1290 581,1290 606,1290 631,1291 656,1291 682,1291 707,1292 732,1292 758,1292 783,1293 808,1293 833,1293 859,1294 884,1294 909,1294 935,1294"/>
+                <TextEquiv>
+                    <Unicode>rit alicuius publicę po¬</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l16" custom="readingOrder {index:14;}">
+                <Coords points="466,1384 714,1372 771,1394 837,1373 936,1379 936,1338 807,1325 719,1344 648,1317 596,1342 533,1326 466,1340"/>
+                <Baseline points="471,1368 496,1368 522,1368 547,1367 573,1367 598,1367 624,1367 649,1367 675,1367 701,1367 726,1368 752,1368 777,1368 803,1368 828,1368 854,1369 879,1369 905,1369 931,1369"/>
+                <TextEquiv>
+                    <Unicode>testatis banno ibidem</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextLine id="r3l17" custom="readingOrder {index:15;}">
+                <Coords points="470,1451 508,1445 527,1455 572,1445 656,1479 682,1458 748,1449 748,1412 676,1417 635,1403 608,1412 572,1395 537,1411 487,1399 470,1410"/>
+                <Baseline points="475,1440 501,1439 528,1439 555,1439 582,1440 609,1440 635,1441 662,1441 689,1441 716,1441 743,1440"/>
+                <TextEquiv>
+                    <Unicode>constringat</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>sine refectione aliqua
+~24~De eodem
+~25~Qđ ieiuniū curet uulnera
+delinquentis
+~26~De quodā alcibiade qui
+sibi graue iugū ieiuni
+imposuerat
+~27~De eo qui sub optentu re¬
+ligionis sine iussu ep̅i sui
+uel pƀri ieiuniū sibi im¬
+ponit
+~28~Ut nullus xp̅ianus dū sc̅a
+loca ꝓ reuerentia petie¬
+rit alicuius publicę po¬
+testatis banno ibidem
+constringat</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion orientation="0.0" type="header" id="TextRegion_1654628073505_1107" custom="readingOrder {index:6;} structure {type:header;}">
+            <Coords points="421,156 1258,156 1257,242 420,242"/>
+            <TextLine id="r3l1" custom="readingOrder {index:0;}">
+                <Coords points="825,222 835,222 853,236 867,226 893,238 930,222 948,229 968,225 986,235 1014,224 1014,188 970,193 949,186 933,171 904,185 890,180 825,184"/>
+                <Baseline points="830,209 855,211 881,212 906,212 932,212 957,211 983,211 1009,212"/>
+                <TextEquiv>
+                    <Unicode>Cap̅ libri xiii</Unicode>
+                </TextEquiv>
+            </TextLine>
+            <TextEquiv>
+                <Unicode>Cap̅ libri xiii</Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

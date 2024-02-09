@@ -65,7 +65,7 @@ def coords_baseline(root, id):
 def add_coordinates_to_missing_facs(root, tei_root):
     # get all lines in tei
     lines = tei_root.findall(".//{" + tei_ns + "}lb")
-    print(lines)
+    #print(lines)
     for line in lines:
         try:
             if line.get("facs") == None:
@@ -76,7 +76,7 @@ def add_coordinates_to_missing_facs(root, tei_root):
 
                 print(str(line_id))
         except Exception as e:
-            print(LET.tostring(line))
+            #print(LET.tostring(line))
 
             print(e, str(line_id))
 
@@ -90,15 +90,21 @@ def copy_id_to_expan(line):
         #print(LET.tostring(line))
 
         #print(line.getparent().tag)
-
+        print(LET.tostring(line))
+        print(LET.tostring(lb))
+        print("___________________")
         # get id of line
         id = line.get("{" + xml_ns + "}id")
         id = id + "_expan"
         # set id of lb
         lb.set("{" + xml_ns + "}id", id)
-        print(LET.tostring(lb))
-        print("___________________")
 
+
+def add_chapter_number_to_num(xml):
+    num_elements = xml.findall(".//{" + tei_ns + "}num")
+    for element in num_elements:
+        # set type of num to 'chapter-number'
+        element.set("type", "chapter-number")
 
 def set_id_of_tei_elements(root, index, file_name, number_of_files, remaining_pbs, page_xml_root):
     if index <= number_of_files:
@@ -154,6 +160,10 @@ def set_id_of_tei_elements(root, index, file_name, number_of_files, remaining_pb
             inscription.set("{" + xml_ns + "}id", file_name +
                             "_inscription_" + str(n).zfill(2))
             print(LET.tostring(inscription))
+
+            # change attribute of num
+            add_chapter_number_to_num(inscription)
+
             change_id_of_inscription(page_xml_root, inscription)
 
             # get all <lb> elements in inscription
@@ -338,18 +348,22 @@ def replace_text(root, tei_root, list_of_tei_lines, xslt):
 
 
 def get_and_set_text_of_elements(text_region, x_path, tei_root, xslt):
-    # get xml_id
-    xml_id = text_region.get("id")
-    #print(xml_id)
-    # get tei element fw with same xml_id
-    element = tei_root.find(f"{x_path}[@xml:id='{xml_id}']", namespaces={
+    try:
+        # get xml_id
+        xml_id = text_region.get("id")
+        print(xml_id)
+        #print(xml_id)
+        # get tei element fw with same xml_id
+        element = tei_root.find(f"{x_path}[@xml:id='{xml_id}']", namespaces={
                             'tei': 'http://www.tei-c.org/ns/1.0', 'xml': xml_ns})
-    # transform fw to abbr text
-    #print(LET.tostring(element))
-    element_text_abbr = transform_to_groundtruth(element, xslt)
-    # set text of header
-    text_region.find(".//{" + page_xml_ns + "}TextEquiv/{" +
+        # transform fw to abbr text
+        print(LET.tostring(element))
+        element_text_abbr = transform_to_groundtruth(element, xslt)
+        # set text of header
+        text_region.find(".//{" + page_xml_ns + "}TextEquiv/{" +
                      page_xml_ns + "}Unicode").text = element_text_abbr
+    except:
+        pass
 
 def postprocess_text(text):
     #text = re.sub(r'\n', '', text)
@@ -444,7 +458,6 @@ def get_and_set_text_of_empty_elements(line, tei_root, list_of_tei_lines):
             line.find("./{" + page_xml_ns + "}TextEquiv/{" +
                       page_xml_ns + "}Unicode").text = text_item.strip()
 
-
 def remove_attributes(tei_root):
     for i in ["full", "part", "instant", "org", "sample"]:
         tei_root = delete_wrong_atributes(tei_root, i)
@@ -491,6 +504,45 @@ def create_standoff_annotation(root):
 
     return root
 
+def add_angled_dash(tei_root, root, xpath_condition):
+    # get all lbs with break='no' in tei_root
+    lbs = tei_root.xpath(f".//tei:lb[@break='no'][not(ancestor::tei:expan)]{xpath_condition}", namespaces={
+                         'tei': 'http://www.tei-c.org/ns/1.0'})
+    # iterate through lbs
+    for lb in lbs:
+        print(LET.tostring(lb))    
+
+        # get xml id of lb
+        id = lb.get("{" + xml_ns + "}id")
+        if id != None:
+            print(id)
+            # find preceeding lb using xpath on tei_root
+            preceeding_lb = tei_root.xpath(
+                f"//tei:lb[@xml:id='{id}']/preceding::tei:lb[not(ancestor::tei:expan)]{xpath_condition}[1]", namespaces={'tei': 'http://www.tei-c.org/ns/1.0', 'xml': xml_ns})[0]
+            # get id of preceeding lb
+            id_preceeding = preceeding_lb.get("{" + xml_ns + "}id")
+            print(LET.tostring(preceeding_lb))
+            print(id_preceeding)
+            # check if TextLine with this id is in root
+            text_line = root.find(
+                ".//{" + page_xml_ns + "}TextLine[@id='"+id_preceeding+"']")
+            # if TextLine is in root
+            if text_line != None:
+                print(LET.tostring(text_line))  
+
+                # appen '¬' to text of TextLine
+                text = text_line.find(
+                    "./{" + page_xml_ns + "}TextEquiv/{" + page_xml_ns + "}Unicode")
+                text.text = text.text + "¬"
+            else:
+                print("TextLine not found")
+    return root
+
+
+
+
+
+
 
 def create_ground_truth(tei_root, root, file, sigle, book_number, expan):
     if expan:
@@ -512,6 +564,12 @@ def create_ground_truth(tei_root, root, file, sigle, book_number, expan):
     root = replace_text(root, tei_root, list_of_tei_lines, xslt)
 
     root = create_standoff_annotation(root)
+
+    # for textlines
+    root = add_angled_dash(tei_root, root, '[not(ancestor::tei:note)]')
+    # for lines in inscription
+    root = add_angled_dash(tei_root, root, '[ancestor::tei:note]')
+
 
     new_path = os.path.join(os.getcwd(), "pagexml", sigle,
                             book_number, suffix.replace('_', ''), suffix)
@@ -536,33 +594,213 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
             current_element += 1
             remaining_pbs -= 1
             add_coordinates_to_missing_facs(root, tei_root)
-
+            #dash
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=True)
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=False)
+
+            
 
     return tei_root
 
 
+def process_numbers(i, roman_numeral, data):
+    data = re.sub(f'<hi rend="color:red"><pc type="distinctio"><g ref="#char-f1f8"></g></pc>{roman_numeral}<pc type="distinctio"><g ref="#char-f1f8"></g></pc></hi>',f'<hi rend="color:red">{roman_numeral}</hi>', data)
+    data = re.sub(f'<hi rend="color:red">{roman_numeral}<pc type="distinctio"><g ref="#char-f1f8"></g></pc></hi>',f'<hi rend="color:red">{roman_numeral}</hi>', data)
+    data = re.sub(f'<pc type="distinctio"><g ref="#char-f1f8"></g></pc>{roman_numeral}<pc type="distinctio"><g ref="#char-f1f8"></g></pc>', f'<num value="{i}">{roman_numeral}</num>', data)
+    data = re.sub(f' {roman_numeral}<pc type="distinctio"><g ref="#char-f1f8"></g></pc>', f' <num value="{i}">{roman_numeral}</num>', data)
+    return data
+
+def preprocess_TEI(path_tei, path_temp_tei, list_of_elements_to_be_replaced):
+    with open (path_tei, "r", encoding="utf-8") as file:
+        data = file.read()
+        #g elements that need to be there
+        for element in list_of_elements_to_be_replaced:
+            data = re.sub(element[0], element[1], data)
+
+        data = re.sub('<choice>\n\s+<abbr>','<choice><abbr>' , data)
+        data = re.sub('</abbr>\n\s+<expan>','</abbr><expan>' , data)
+        data = re.sub('</expan>\n\s+</choice>','</expan></choice>' , data)
+
+        data = re.sub('<subst>\n\s+<del','<subst><del' , data)
+        data = re.sub('"/>\n\s+<add>','"/><add>' , data)
+        data = re.sub('</add>\n\s+</subst>','</add></subst>' , data)
+
+        #data = re.sub('(<note type="inscription.*?">)(\w)','\g<1><lb/>\g<2>', data)
+
+        data = re.sub('(<note type="inscription" place="[^"]*" anchored="[^"]*" facs="[^"]*">)(?!<lb)', '\g<1><lb/>', data)
+
+
+        data = re.sub('\n\s+<label','<label', data)
+        data = re.sub('\n\s+<num','<num', data)
+        data = re.sub('\n\s+<hi','<hi', data)
+        data = re.sub('\n\s+</hi','</hi', data)
+        data = re.sub('\n\s+</num','</num', data)
+        data = re.sub('\n\s+</hi','</hi', data)
+        data = re.sub('\n\s+</label','</label', data)
+        data = re.sub('\n\s+</head','</head', data)
+        
+        # delete <pc> around numbers
+        for i in range(1,300):
+            roman_numeral = roman.toRoman(i).lower()
+            data = process_numbers(i, roman_numeral, data)
+            # delete num elements in num elements
+
+        medieval_roman_numbers = [
+            [4, 'iiii'],
+            [9, 'viiii'],
+            [14, 'xiiii'],
+            [19, 'xviiii'],
+            [24, 'xxiiii'],
+            [29, 'xxviiii'],
+            [34, 'xxxiiii'],
+            [39, 'xxxviiii'],
+            [44, 'xxxxiiii'],
+            [49, 'xxxxviiii'],
+            [54, 'liiii'],
+            [59, 'lviiii'],
+            [64, 'lxiiii'],
+            [69, 'lxviiii'],
+            [74, 'lxxiiii'],
+            [79, 'lxxviiii'],
+            [84, 'lxxxiiii'],
+            [89, 'lxxxviiii'],
+            [40, 'xxxx'],
+            [90, 'lxxxx'],
+            [104, 'ciiii'],
+            [109, 'cviiii'],
+            [114, 'cxiiii'],
+            [119, 'cxviiii'],
+            [124, 'cxxiiii'],
+            [129, 'cxxviiii'],
+            [134, 'cxxxiiii'],
+            [139, 'cxxxviiii'],
+            [144, 'cxxxxiiii'],
+            [149, 'cxxxxviiii'],
+            [154, 'cliiii'],
+            [159, 'clviiii'],
+            [164, 'clxiiii'],
+            [169, 'clxviiii'],
+            [174, 'clxxiiii'],
+            [179, 'clxxviiii'],
+            [184, 'clxxxiiii'],
+            [189, 'clxxxviiii'],
+            [190, 'cxxxx'],
+            [194, 'cxxxxiiii'],
+            [199, 'cxxxxviiii'],
+            [204, 'cciiii'],
+            [209, 'ccviiii'],
+            [214, 'ccxiiii'],
+            [219, 'ccxviiii'],
+            [224, 'ccxxiiii'],
+            [229, 'ccxxviiii'],
+            [234, 'ccxxxiiii'],
+            [239, 'ccxxxviiii'],
+            [244, 'ccxxxxiiii'],
+            [249, 'ccxxxxviiii'],
+            [254, 'ccliiii'],
+            [259, 'cclviiii'],
+            [264, 'cclxiiii'],
+            [269, 'cclxviiii'],
+            [274, 'cclxxiiii'],
+            [279, 'cclxxviiii'],
+            [284, 'cclxxxiiii'],
+            [289, 'cclxxxviiii'],
+            [290, 'ccxxxx']
+            ]    
+        for element in medieval_roman_numbers:
+            i = element[0]
+            roman_numeral = element[1]
+            data = process_numbers(i, roman_numeral, data)
+
+    with open(path_temp_tei, "w", encoding="utf-8") as file:
+        file.write(data)
+
+    # replace ecaudata
+    pass
+
+def postprocess_TEI(path, list_of_elements_to_be_checked):
+    with open (path, "r", encoding="utf-8") as file:
+        data = file.read()
+        for element in list_of_elements_to_be_checked:
+            if element not in data:
+                element_text = re.sub('<g .*?>(.*?)</g>','\g<1>',element)
+                data = re.sub(element, element_text, data)
+    with open(path, "w", encoding="utf-8") as file:
+        file.write(data)
+
+
 def main():
-    sigle = "B"
+    sigle = "Vb"
     book_number = str(13).zfill(2)
     iiif_start_number = 410
     # variables
     path_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}.xml")
+    path_temp_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}_temp.xml")
     path_new_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}_new.xml")
     path = os.path.join(os.getcwd(), "pagexml", sigle, book_number)
     # get number of files in directory
     # number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
-    number_of_files = 7
+    number_of_files = 12
     remaining_pbs = number_of_files
     current_element = 0
+    list_of_elements_to_be_replaced = [['<g ref="#char-019a">ƚ</g>','<g ref="#char-a749">ꝉ</g>'], 
+                                       ['<g ref="#char-0119">ę</g>','ę']]
 
-    tei_root = load_tei_file(path_tei)
+    preprocess_TEI(path_tei, path_temp_tei, list_of_elements_to_be_replaced)
+
+    tei_root = load_tei_file(path_temp_tei)
     tei_root = remove_attributes(tei_root)
     tei_root = iterate_through_pagexml(
         path, iiif_start_number, number_of_files, remaining_pbs, current_element, tei_root, sigle, book_number)
 
     save_xml_file(tei_root, path_new_tei)
+
+    list_of_elements_to_be_checked =   ['<g ref="#char-f1ac"></g>',
+                                        '<pc type="distinctio"><g ref="#char-f1f8"></g></pc>',
+                                        '<pc type="p-versus"><g ref="#char-f1ea"></g></pc>',
+                                        '<pc type="p-flexus"><g ref="#char-f1f5"></g></pc>',
+                                        '<pc type="p-comma-positura"><g ref="#char-f1e4"></g></pc>',
+                                        '<pc type="p-elevatus"><g ref="#char-f1f0"></g></pc>',
+                                        '<pc type="p-interrogativus"><g ref="#char-f160"></g></pc>',
+                                        '<pc type="p-interrogativus-positura"><g ref="#char-int-posit"></g></pc>',
+                                        '<g ref="#char-f1e1"></g>',
+                                        '<g ref="#char-0180">ƀ</g>',
+                                        '<g ref="#char-0111">đ</g>',
+                                        '<g ref="#char-0127">ħ</g>',
+                                        '<g ref="#char-f1c2"></g>',
+                                        '<g ref="#char-a740">Ꝁ</g>',
+                                        '<g ref="#char-a741">ꝁ</g>',
+                                        '<g ref="#char-a748">Ꝉ</g>',
+                                        '<g ref="#char-a749">ꝉ</g>',
+                                        '<g ref="#char-019a">ƚ</g>',
+                                        '<g ref="#char-0119">ę</g>',
+                                        '<g ref="#char-a750">Ꝑ</g>',
+                                        '<g ref="#char-a751">ꝑ</g>',
+                                        '<g ref="#char-a752">Ꝓ</g>',
+                                        '<g ref="#char-a753">ꝓ</g>',
+                                        '<g ref="#char-0304">&#x0304;</g>',
+                                        '<g ref="#char-0305">&#x0305;</g>',
+                                        '<g ref="#char-a757">ꝗ</g>',
+                                        '<g ref="#char-a759">ꝙ</g>',
+                                        '<g ref="#char-a75D">ꝝ</g>',
+                                        '<g ref="#char-a75C">Ꝝ</g>',
+                                        '<g ref="#char-1dd2">&#x1dd2;</g>',
+                                        '<g ref="#char-1dd3">&#x1dd3;</g>',
+                                        '<g ref="#char-0365">&#x0365;</g>',
+                                        '<g ref="#char-0300">◌̀</g>',
+                                        '<g ref="#char-0301">◌́</g>',
+                                        '<g ref="#char-0302">◌̂</g>',
+                                        '<g ref="#char-0306">◌̆</g>',
+                                        '<g ref="#char-0366">◌ͦ</g>',
+                                        '<g ref="#char-0367">◌ͧ</g>',
+                                        '<g ref="#char-211E">℞</g>',
+                                        '<g ref="#char-a756">Ꝗ</g>',
+                                        '<g ref="#char-a758">Ꝙ</g>',
+                                        '<g ref="#char-2234">∴</g>',
+                                        '<g ref="#char-23D1">⏑</g>']
+
+    postprocess_TEI(path_new_tei, list_of_elements_to_be_checked)
+
 
 """
 def main():

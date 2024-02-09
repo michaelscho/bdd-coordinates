@@ -2,7 +2,7 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2024-02-07 20:55:03.643229</Created>
+        <Created>2024-02-09 09:55:50.113622</Created>
         <LastChange>2022-09-20T11:45:55.910+02:00</LastChange>
         </Metadata>
     <Page imageFilename="B_0412.jpg" imageWidth="1500" imageHeight="1846">
@@ -32,7 +32,7 @@
                 <Coords points="86,866 122,872 166,861 193,872 214,864 244,872 262,858 293,856 290,819 274,811 164,840 123,836 99,818 83,818"/>
                 <Baseline points="92,870 288,855"/>
                 <TextEquiv>
-                    <Unicode>Ex concilio Mogonti</Unicode>
+                    <Unicode>Ex concilio Mogonti¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_inscription_01_l_02" custom="readingOrder {index:1;}">
@@ -103,7 +103,7 @@
                 <Coords points="362,345 430,328 454,339 523,328 558,342 587,326 657,336 676,324 712,336 781,322 780,291 707,283 508,305 463,289 361,313"/>
                 <Baseline points="367,335 776,323"/>
                 <TextEquiv>
-                    <Unicode>genua flectere debeant In domi</Unicode>
+                    <Unicode>genua flectere debeant In domi¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_02" custom="readingOrder {index:1;}">
@@ -117,14 +117,14 @@
                 <Coords points="346,428 475,414 507,435 520,423 618,422 634,437 686,417 711,436 764,426 778,437 784,383 646,394 574,376 539,390 466,380 346,394"/>
                 <Baseline points="351,418 779,412"/>
                 <TextEquiv>
-                    <Unicode>a uespera usq in uesperam non fle</Unicode>
+                    <Unicode>a uespera usq in uesperam non fle¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_04" custom="readingOrder {index:3;}">
                 <Coords points="342,470 402,463 449,480 490,463 532,483 607,461 754,472 779,459 779,440 658,426 640,439 606,424 409,444 367,429 342,441"/>
                 <Baseline points="347,462 774,462"/>
                 <TextEquiv>
-                    <Unicode>ctant genua sed stantes īcurua</Unicode>
+                    <Unicode>ctant genua sed stantes īcurua¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_05" custom="readingOrder {index:4;}">
@@ -138,14 +138,14 @@
                 <Coords points="345,559 552,549 596,563 702,545 763,566 763,519 751,517 600,525 561,511 497,528 438,506 345,516"/>
                 <Baseline points="350,549 758,548"/>
                 <TextEquiv>
-                    <Unicode>solotenus impresso orare presu</Unicode>
+                    <Unicode>solotenus impresso orare presu¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_07" custom="readingOrder {index:6;}">
                 <Coords points="348,595 431,602 477,590 495,603 517,591 548,609 588,595 646,607 706,591 727,606 760,595 760,564 732,558 660,567 531,549 502,566 417,554 389,568 348,558"/>
                 <Baseline points="353,591 755,590"/>
                 <TextEquiv>
-                    <Unicode>mat sicut iudaei irridentes do</Unicode>
+                    <Unicode>mat sicut iudaei irridentes do¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_08" custom="readingOrder {index:7;}">
@@ -159,14 +159,14 @@
                 <Coords points="340,682 384,699 406,683 425,692 484,675 529,689 564,676 610,695 642,677 697,688 757,676 757,644 685,653 635,635 606,655 588,643 560,656 464,643 406,658 340,642"/>
                 <Baseline points="345,676 752,673"/>
                 <TextEquiv>
-                    <Unicode>leguntur sed utraq genua ter</Unicode>
+                    <Unicode>leguntur sed utraq genua ter¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_10" custom="readingOrder {index:9;}">
                 <Coords points="342,735 393,727 416,742 496,717 580,734 631,721 722,731 749,718 749,680 671,678 580,698 488,678 393,702 342,696"/>
                 <Baseline points="347,721 744,716"/>
                 <TextEquiv>
-                    <Unicode>ręfigat Ait enim apostolus</Unicode>
+                    <Unicode>rę figat Ait enim apostolus</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_11" custom="readingOrder {index:10;}">
@@ -194,7 +194,7 @@
                 <Coords points="334,882 371,899 424,883 459,898 502,882 727,892 769,874 769,856 736,845 617,861 516,840 496,852 459,839 440,853 334,838"/>
                 <Baseline points="339,880 764,881"/>
                 <TextEquiv>
-                    <Unicode>Si quis indictum ieiunium super</Unicode>
+                    <Unicode>Si quis indictum ieiunium super¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_15" custom="readingOrder {index:14;}">
@@ -208,7 +208,7 @@
                 <Coords points="340,985 390,961 449,973 659,959 725,982 783,976 782,911 729,930 685,919 654,939 581,926 557,940 518,927 458,943 416,930 340,940"/>
                 <Baseline points="345,962 778,954"/>
                 <TextEquiv>
-                    <Unicode>cum cęteris xp̅ianis noluerit in gan</Unicode>
+                    <Unicode>cum cęteris xp̅ianis noluerit in gan¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_17" custom="readingOrder {index:16;}">
@@ -229,7 +229,7 @@
                 <Coords points="321,1081 359,1106 407,1088 670,1101 780,1091 781,1047 735,1036 582,1064 419,1052 359,1070 322,1051"/>
                 <Baseline points="326,1081 775,1090"/>
                 <TextEquiv>
-                    <Unicode>Si quis eorum qui continentięstudent</Unicode>
+                    <Unicode>Si quis eorum qui continentię student</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_20" custom="readingOrder {index:19;}">
@@ -243,21 +243,21 @@
                 <Coords points="341,1172 371,1185 394,1175 454,1186 622,1177 649,1192 691,1176 730,1184 760,1163 760,1147 714,1134 684,1144 644,1134 598,1152 532,1141 341,1147"/>
                 <Baseline points="346,1173 755,1173"/>
                 <TextEquiv>
-                    <Unicode>in commune ieiunia et abęcclesia</Unicode>
+                    <Unicode>in commune ieiunia et ab ęcclesia</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_22" custom="readingOrder {index:21;}">
                 <Coords points="341,1222 486,1216 505,1228 571,1211 624,1222 669,1211 706,1223 740,1211 740,1186 636,1175 597,1188 528,1180 470,1191 394,1175 341,1188"/>
                 <Baseline points="346,1216 735,1211"/>
                 <TextEquiv>
-                    <Unicode>custodita superbiendo dissol</Unicode>
+                    <Unicode>custodita superbiendo dissol¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_23" custom="readingOrder {index:22;}">
                 <Coords points="344,1254 504,1254 527,1271 576,1253 604,1268 643,1254 756,1263 756,1230 697,1220 670,1231 630,1220 493,1232 380,1217 344,1236"/>
                 <Baseline points="349,1257 751,1253"/>
                 <TextEquiv>
-                    <Unicode>uit stimulo suęcogitationis im</Unicode>
+                    <Unicode>uit stimulo suę cogitationis im¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_24" custom="readingOrder {index:23;}">
@@ -292,7 +292,7 @@
                 <Coords points="348,1459 441,1471 461,1460 757,1466 757,1423 727,1417 690,1433 616,1429 569,1443 521,1428 503,1439 455,1423 426,1436 348,1418"/>
                 <Baseline points="353,1461 752,1462"/>
                 <TextEquiv>
-                    <Unicode>obseruanda sit a cunctis xp̅ia</Unicode>
+                    <Unicode>obseruanda sit a cunctis xp̅ia¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_1_l_29" custom="readingOrder {index:28;}">
@@ -306,7 +306,7 @@
                 <Coords points="344,1569 393,1553 413,1563 436,1554 463,1571 491,1553 572,1562 729,1547 747,1557 747,1519 648,1524 617,1508 566,1530 497,1526 469,1509 413,1529 363,1514 344,1523"/>
                 <Baseline points="349,1546 529,1551 742,1545"/>
                 <TextEquiv>
-                    <Unicode>romanaęcclesia constitutum</Unicode>
+                    <Unicode>romana ęcclesia constitutum</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -337,7 +337,7 @@
                 <Coords points="802,462 860,476 944,459 1012,473 1079,458 1142,476 1188,456 1234,459 1233,425 1088,438 1019,416 946,443 876,427 801,433"/>
                 <Baseline points="807,463 1229,459"/>
                 <TextEquiv>
-                    <Unicode>respersi et cilicio induti nisi in</Unicode>
+                    <Unicode>respersi et cilicio induti nisi in¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_2_l_05" custom="readingOrder {index:4;}">
@@ -358,7 +358,7 @@
                 <Coords points="800,623 854,601 905,600 931,616 964,595 1052,600 1064,588 1116,589 1153,609 1179,595 1203,611 1238,602 1237,556 1196,551 1071,568 1040,555 1020,570 936,569 908,550 845,545 799,555"/>
                 <Baseline points="805,593 1232,587"/>
                 <TextEquiv>
-                    <Unicode>Cum exigentibus peccatis gallia</Unicode>
+                    <Unicode>Cum exigentibus peccatis gallia¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_2_l_08" custom="readingOrder {index:7;}">
@@ -400,7 +400,7 @@
                 <Coords points="804,840 932,849 1007,838 1055,853 1080,837 1146,831 1215,848 1214,806 1117,793 1031,814 944,802 804,821"/>
                 <Baseline points="809,841 1210,832"/>
                 <TextEquiv>
-                    <Unicode>in commune statuerunt ut tri</Unicode>
+                    <Unicode>in commune statuerunt ut tri¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_2_l_14" custom="readingOrder {index:13;}">
@@ -421,14 +421,14 @@
                 <Coords points="812,977 948,957 1049,969 1080,953 1166,973 1237,957 1236,924 1183,935 1168,922 1112,928 1079,915 1062,926 1013,920 993,936 967,924 879,936 810,925"/>
                 <Baseline points="816,962 1232,950"/>
                 <TextEquiv>
-                    <Unicode>abstulisset hi dies in consuetudi</Unicode>
+                    <Unicode>abstulisset hi dies in consuetudi¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_2_l_17" custom="readingOrder {index:16;}">
                 <Coords points="805,1010 890,1010 931,1030 964,1009 1098,997 1175,1000 1192,1014 1243,1002 1242,973 1200,962 1137,980 1072,955 981,982 929,967 804,986"/>
                 <Baseline points="810,1005 1238,995"/>
                 <TextEquiv>
-                    <Unicode>nem annuęcelebritatis uenerunt</Unicode>
+                    <Unicode>nem annuę celebritatis uenerunt</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_2_l_18" custom="readingOrder {index:17;}">
@@ -477,7 +477,7 @@
                 <Coords points="805,1294 1199,1295 1253,1280 1252,1258 1225,1252 1191,1264 1085,1250 1002,1268 978,1255 948,1270 856,1256 804,1266"/>
                 <Baseline points="810,1293 1248,1285"/>
                 <TextEquiv>
-                    <Unicode>rabiem euadamus sed ut inuisibi</Unicode>
+                    <Unicode>rabiem euadamus sed ut inuisibi¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_2_l_25" custom="readingOrder {index:24;}">
@@ -512,7 +512,7 @@
                 <Coords points="804,1509 906,1501 933,1518 977,1500 1023,1514 1098,1497 1137,1510 1249,1497 1234,1471 1114,1458 1092,1473 1030,1459 995,1476 903,1465 803,1480"/>
                 <Baseline points="809,1498 1243,1491"/>
                 <TextEquiv>
-                    <Unicode>cinere lugere debem᷒ Prohibean</Unicode>
+                    <Unicode>cinere lugere debem᷒ Prohibean¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="B_0412_column_2_l_30" custom="readingOrder {index:29;}">

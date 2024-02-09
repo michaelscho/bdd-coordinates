@@ -2,7 +2,7 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2024-02-07 16:54:30.904341</Created>
+        <Created>2024-02-09 11:41:25.607760</Created>
         <LastChange>2022-06-09T13:51:22.830+02:00</LastChange>
         </Metadata>
     <Page imageFilename="F_0412.jpg" imageWidth="3089" imageHeight="4492">
@@ -182,7 +182,7 @@
                 <Coords points="719,1643 809,1631 934,1677 1203,1636 1804,1653 1824,1554 1752,1529 1364,1578 1121,1551 1060,1588 719,1589"/>
                 <Baseline points="726,1635 1817,1633"/>
                 <TextEquiv>
-                    <Unicode>Vt in cęna dn̅i ut in reliquis qᷓdra</Unicode>
+                    <Unicode>Vt in cęna dn̅i ut in reliquis qᷓdra¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0412_column_1_l_12" custom="readingOrder {index:11;}">
@@ -196,7 +196,7 @@
                 <Coords points="745,1869 1823,1831 1822,1769 1758,1759 1608,1780 1526,1748 1403,1782 1306,1741 1145,1780 1040,1750 744,1779"/>
                 <Baseline points="752,1836 1816,1823"/>
                 <TextEquiv>
-                    <Unicode>Vt in sabbato sc̅o ieiuniū ante noc</Unicode>
+                    <Unicode>Vt in sabbato sc̅o ieiuniū ante noc¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0412_column_1_l_14" custom="readingOrder {index:13;}">
@@ -315,7 +315,7 @@
                 <Coords points="811,3483 1422,3470 1482,3499 1586,3469 1658,3500 1859,3462 1858,3369 1632,3420 1237,3379 1098,3418 810,3397"/>
                 <Baseline points="817,3458 1852,3445"/>
                 <TextEquiv>
-                    <Unicode>Vt nullus in die dominica ꝓ absti</Unicode>
+                    <Unicode>Vt nullus in die dominica ꝓ absti¬</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>
@@ -536,7 +536,7 @@
                 <Coords points="1856,920 2271,930 2362,902 2668,938 2762,915 2762,843 2533,814 2303,835 2273,810 1856,849"/>
                 <Baseline points="1862,894 1906,896 1951,896 1996,896 2040,896 2085,896 2130,896 2174,896 2219,896 2264,896 2309,896 2353,896 2398,894 2443,894 2487,894 2532,894 2577,894 2621,896 2666,896 2711,896 2756,897"/>
                 <TextEquiv>
-                    <Unicode>Vt placita scꝉaria in dieb domi</Unicode>
+                    <Unicode>Vt placita scꝉaria in dieb domi¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0412_column_2_l_05" custom="readingOrder {index:4;}">
@@ -557,7 +557,7 @@
                 <Coords points="1849,1229 2528,1231 2618,1260 2772,1236 2772,1143 2705,1172 2298,1135 1849,1162"/>
                 <Baseline points="1856,1211 1901,1211 1947,1211 1992,1211 2038,1211 2083,1211 2129,1211 2174,1209 2220,1209 2265,1209 2311,1209 2356,1208 2402,1208 2447,1208 2493,1208 2538,1208 2584,1208 2629,1209 2675,1209 2720,1209 2766,1211"/>
                 <TextEquiv>
-                    <Unicode>Vt ieiuniū absq cibo luxurię ob</Unicode>
+                    <Unicode>Vt ieiuniū absq cibo luxurię ob¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0412_column_2_l_08" custom="readingOrder {index:7;}">
@@ -634,7 +634,7 @@
                 <Coords points="1860,2336 1925,2311 2474,2328 2519,2300 2734,2320 2815,2301 2815,2221 2614,2205 2345,2257 2057,2233 1989,2263 1859,2235"/>
                 <Baseline points="1867,2297 2808,2289"/>
                 <TextEquiv>
-                    <Unicode>Vt nullus xp̅ianus dū sc̅a loca ꝓ re</Unicode>
+                    <Unicode>Vt nullus xp̅ianus dū sc̅a loca ꝓ re¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0412_column_2_l_19" custom="readingOrder {index:18;}">
