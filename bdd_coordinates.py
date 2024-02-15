@@ -4,6 +4,8 @@ from datetime import datetime
 import re
 import xslt_styles
 import roman
+import argparse
+import config
 
 
 page_xml_ns = "http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15"
@@ -26,13 +28,13 @@ def delete_wrong_atributes(root, attribute):
     return root
 
 
-def coords_baseline(root, id):
+def coords_baseline(root, id, sigle):
     # get line with id
     line = root.findall(
         ".//{" + page_xml_ns + "}TextLine[@id='" + str(id) + "']")[0]
     # scaling factor for coordinates
     # iiif_scale_factor F 1.34
-    x = 1.34
+    x = config.manuscript_data[sigle]["iiif_scale_factor"]
 
     # fetch coordinates using XPath query from the PAGE XML document root
     coords = line.xpath('.//ns0:Baseline/@points',
@@ -62,7 +64,7 @@ def coords_baseline(root, id):
     return coord_string
 
 
-def add_coordinates_to_missing_facs(root, tei_root):
+def add_coordinates_to_missing_facs(root, tei_root, sigle):
     # get all lines in tei
     lines = tei_root.findall(".//{" + tei_ns + "}lb")
     #print(lines)
@@ -71,7 +73,7 @@ def add_coordinates_to_missing_facs(root, tei_root):
             if line.get("facs") == None:
                 # get line id
                 line_id = line.get("{" + xml_ns + "}id")
-                line.set("facs", coords_baseline(root, line_id))
+                line.set("facs", coords_baseline(root, line_id, sigle))
                 print(LET.tostring(line))
 
                 print(str(line_id))
@@ -218,14 +220,19 @@ def set_metadata(root):
     return root
 
 
-def create_link_to_image(root, iiif_start_number, file):
+def create_link_to_image(root, iiif_start_number, file, sigle):
     # Get image name
     image_name = root.find(".//{" + page_xml_ns + "}Page")
     width = image_name.get("imageWidth")
     height = image_name.get("imageHeight")
     # set link to image depending on iiif api
     #link_to_image = f"https://sammlungen.ub.uni-frankfurt.de/i3f/v20/{iiif_start_number}/full/{width},{height}/0/default.jpg"
-    image_name.set("imageFilename", file.replace('.xml', '.jpg'))
+    #image_name.set("imageFilename", file.replace('.xml', '.jpg'))
+    link_to_image = config.manuscript_data[sigle]["facs_url"]
+    link_to_image = link_to_image.replace("{iiif_start_number}", str(iiif_start_number))
+    link_to_image = link_to_image.replace("{width}", str(width))
+    link_to_image = link_to_image.replace("{height}", str(height))
+    image_name.set("imageFilename", link_to_image)
 
     return root
 
@@ -581,7 +588,7 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
         if file.endswith(".xml"):
             root = load_pagexml_file(os.path.join(path, file))
             root = set_metadata(root)
-            root = create_link_to_image(root, iiif_start_number, file)
+            root = create_link_to_image(root, iiif_start_number, file, sigle)
             iiif_start_number += 1
             root = remove_page_elements(root)
             root = remove_text_equiv(root)
@@ -593,7 +600,7 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
             root = create_line_id(root)
             current_element += 1
             remaining_pbs -= 1
-            add_coordinates_to_missing_facs(root, tei_root)
+            add_coordinates_to_missing_facs(root, tei_root, sigle)
             #dash
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=True)
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=False)
@@ -729,18 +736,19 @@ def postprocess_TEI(path, list_of_elements_to_be_checked):
         file.write(data)
 
 
-def main():
-    sigle = "Vb"
-    book_number = str(13).zfill(2)
-    iiif_start_number = 410
+def main(sigle, book_number, iiif_start_number):
+    #sigle = "Vb"
+    #book_number = str(13).zfill(2)
+    #iiif_start_number = 410
+    iiif_start_number = int(iiif_start_number)
     # variables
     path_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}.xml")
     path_temp_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}_temp.xml")
-    path_new_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}_new.xml")
+    path_new_tei = os.path.join(os.getcwd(), "tei", "output", f"{sigle}_{book_number}_new.xml")
     path = os.path.join(os.getcwd(), "pagexml", sigle, book_number)
     # get number of files in directory
-    # number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name))])
-    number_of_files = 12
+    number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name)) and name.endswith('.xml')])
+    #number_of_files = 12
     remaining_pbs = number_of_files
     current_element = 0
     list_of_elements_to_be_replaced = [['<g ref="#char-019a">ƚ</g>','<g ref="#char-a749">ꝉ</g>'], 
@@ -824,9 +832,17 @@ def main():
     save_xml_file(tei_root, path_new_tei)
 """
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+ #   main()
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Given the sigle and book number, the function adds the ids")
+    parser.add_argument("-S", "--sigle", help="Book sigle", required=True)
+    parser.add_argument("-B", "--book-number", help="Book number", required=True)
+    parser.add_argument("-N", "--iiif-start-number", help="IIIF start number", required=True)
+    args = parser.parse_args()
+    main(args.sigle, args.book_number, args.iiif_start_number)
+    #python bdd_coordinates.py -S F -B 13
 """
 2036028
 F = https://sammlungen.ub.uni-frankfurt.de/i3f/v20/{2036028}/full/full/0/default.jpg -> 412
