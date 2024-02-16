@@ -6,6 +6,7 @@ import xslt_styles
 import roman
 import argparse
 import config
+import json
 
 
 page_xml_ns = "http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15"
@@ -220,21 +221,28 @@ def set_metadata(root):
     return root
 
 
-def create_link_to_image(root, iiif_start_number, file, sigle):
-    # Get image name
-    image_name = root.find(".//{" + page_xml_ns + "}Page")
-    width = image_name.get("imageWidth")
-    height = image_name.get("imageHeight")
-    # set link to image depending on iiif api
-    #link_to_image = f"https://sammlungen.ub.uni-frankfurt.de/i3f/v20/{iiif_start_number}/full/{width},{height}/0/default.jpg"
-    #image_name.set("imageFilename", file.replace('.xml', '.jpg'))
+def create_link_to_image(root, iiif_start_number, sigle):
+    page = root.find(".//{" + page_xml_ns + "}Page")
+    width = page.get("imageWidth")
+    height = page.get("imageHeight")
+    image_name = page.get("imageFilename")
+
     link_to_image = config.manuscript_data[sigle]["facs_url"]
     link_to_image = link_to_image.replace("{iiif_start_number}", str(iiif_start_number))
     link_to_image = link_to_image.replace("{width}", str(width))
     link_to_image = link_to_image.replace("{height}", str(height))
-    image_name.set("imageFilename", link_to_image)
 
-    return root
+    return {"file_name": image_name.replace("jpg","xml"), "image_name": image_name, "url": link_to_image}
+
+def save_json(images_list, sigle, book_number, expan):
+    if expan:
+        path = os.path.join(os.getcwd(), "pagexml", sigle,
+                                book_number, "expan", "images.json")
+    else:
+        path = os.path.join(os.getcwd(), "pagexml", sigle,
+                                book_number, "abbr", "images.json")
+    with open(path, "w+") as json_file:
+        json.dump(images_list, json_file, indent=4)
 
 
 def remove_page_elements(root):
@@ -584,11 +592,12 @@ def create_ground_truth(tei_root, root, file, sigle, book_number, expan):
 
 
 def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_pbs, current_element, tei_root, sigle, book_number):
+    images_list = list()
     for file in os.listdir(path):
         if file.endswith(".xml"):
             root = load_pagexml_file(os.path.join(path, file))
             root = set_metadata(root)
-            root = create_link_to_image(root, iiif_start_number, file, sigle)
+            images_list.append(create_link_to_image(root, iiif_start_number, sigle))
             iiif_start_number += 1
             root = remove_page_elements(root)
             root = remove_text_equiv(root)
@@ -604,6 +613,8 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
             #dash
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=True)
             create_ground_truth(tei_root, root, file, sigle, book_number, expan=False)
+    save_json(images_list, sigle, book_number, expan=True)
+    save_json(images_list, sigle, book_number, expan=False)
 
             
 
@@ -737,9 +748,6 @@ def postprocess_TEI(path, list_of_elements_to_be_checked):
 
 
 def main(sigle, book_number, iiif_start_number):
-    #sigle = "Vb"
-    #book_number = str(13).zfill(2)
-    #iiif_start_number = 410
     iiif_start_number = int(iiif_start_number)
     # variables
     path_tei = os.path.join(os.getcwd(), "tei", f"{sigle}_{book_number}.xml")
@@ -748,7 +756,6 @@ def main(sigle, book_number, iiif_start_number):
     path = os.path.join(os.getcwd(), "pagexml", sigle, book_number)
     # get number of files in directory
     number_of_files = len([name for name in os.listdir(path) if os.path.isfile(os.path.join(path, name)) and name.endswith('.xml')])
-    #number_of_files = 12
     remaining_pbs = number_of_files
     current_element = 0
     list_of_elements_to_be_replaced = [['<g ref="#char-019a">ƚ</g>','<g ref="#char-a749">ꝉ</g>'], 
@@ -840,6 +847,7 @@ if __name__ == "__main__":
     parser.add_argument("-S", "--sigle", help="Book sigle", required=True)
     parser.add_argument("-B", "--book-number", help="Book number", required=True)
     parser.add_argument("-N", "--iiif-start-number", help="IIIF start number", required=True)
+
     args = parser.parse_args()
     main(args.sigle, args.book_number, args.iiif_start_number)
     #python bdd_coordinates.py -S F -B 13
