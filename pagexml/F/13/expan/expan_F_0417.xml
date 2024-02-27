@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2024-02-09 11:41:28.492070</Created>
+        <Created>2024-02-27 16:07:10.350506</Created>
         <LastChange>2022-06-24T22:42:01.683+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="F_0417.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_12_0417.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion id="F_0417_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="119,649 230,649 230,737 119,737"/>
             <TextLine id="F_0417_chapter_count_001_l_01" custom="readingOrder {index:0;} unclear {offset:0; length:3;}">
@@ -432,7 +432,7 @@
                 <Coords points="1250,2320 2250,2323 2249,2236 2169,2264 1865,2229 1742,2268 1531,2236 1250,2273"/>
                 <Baseline points="1257,2306 1306,2306 1355,2306 1404,2306 1454,2306 1503,2307 1552,2307 1602,2307 1651,2307 1700,2307 1750,2307 1799,2307 1848,2307 1897,2306 1947,2306 1996,2305 2045,2304 2095,2303 2144,2303 2193,2301 2243,2300"/>
                 <TextEquiv>
-                    <Unicode>nua moderataque id est cottidie esu¬</Unicode>
+                    <Unicode>nua moderataque Id::est cottidie esu¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0417_column_2_l_19" custom="readingOrder {index:18;}">

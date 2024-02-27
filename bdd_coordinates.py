@@ -75,13 +75,14 @@ def add_coordinates_to_missing_facs(root, tei_root, sigle):
                 # get line id
                 line_id = line.get("{" + xml_ns + "}id")
                 line.set("facs", coords_baseline(root, line_id, sigle))
-                print(LET.tostring(line))
+                #print(LET.tostring(line))
 
-                print(str(line_id))
+                #print(str(line_id))
         except Exception as e:
             #print(LET.tostring(line))
 
-            print(e, str(line_id))
+            #print(e, str(line_id))
+            pass
 
 
 def copy_id_to_expan(line):
@@ -93,9 +94,9 @@ def copy_id_to_expan(line):
         #print(LET.tostring(line))
 
         #print(line.getparent().tag)
-        print(LET.tostring(line))
-        print(LET.tostring(lb))
-        print("___________________")
+        #print(LET.tostring(line))
+        #print(LET.tostring(lb))
+        #print("___________________")
         # get id of line
         id = line.get("{" + xml_ns + "}id")
         id = id + "_expan"
@@ -162,7 +163,7 @@ def set_id_of_tei_elements(root, index, file_name, number_of_files, remaining_pb
         for inscription in inscriptions:
             inscription.set("{" + xml_ns + "}id", file_name +
                             "_inscription_" + str(n).zfill(2))
-            print(LET.tostring(inscription))
+            #print(LET.tostring(inscription))
 
             # change attribute of num
             add_chapter_number_to_num(inscription)
@@ -366,13 +367,13 @@ def get_and_set_text_of_elements(text_region, x_path, tei_root, xslt):
     try:
         # get xml_id
         xml_id = text_region.get("id")
-        print(xml_id)
+        #(xml_id)
         #print(xml_id)
         # get tei element fw with same xml_id
         element = tei_root.find(f"{x_path}[@xml:id='{xml_id}']", namespaces={
                             'tei': 'http://www.tei-c.org/ns/1.0', 'xml': xml_ns})
         # transform fw to abbr text
-        print(LET.tostring(element))
+        #print(LET.tostring(element))
         element_text_abbr = transform_to_groundtruth(element, xslt)
         # set text of header
         text_region.find(".//{" + page_xml_ns + "}TextEquiv/{" +
@@ -397,7 +398,9 @@ def postprocess_text(text):
     for i in range(1,300):
         roman_numeral = roman.toRoman(i).lower()
         text = re.sub(f' {roman_numeral}', f'{roman_numeral}', text)    
-    
+        text = re.sub(f'{roman_numeral}', f' {roman_numeral}', text)
+        text = text.replace('  ',' ')
+        text = re.sub('^ ','',text)        
     text = text
 
     return text
@@ -423,6 +426,7 @@ def transform_to_groundtruth_lines(xml, xslt):
     result_tree = transform(xml)
     # delete new lines and spaces
     text = postprocess_text(str(result_tree))
+    #print(text)
 
     return text
 
@@ -436,7 +440,6 @@ def connect_lines(tei_root, xslt_lines):
     # replace "_expan" with "" using comprehension
     column_lines_list = [[re.sub(r'_expan', '', item)
                           for item in line] for line in column_lines_list]
-
     #print(column_lines_list)
 
     return column_lines_list
@@ -481,6 +484,7 @@ def remove_attributes(tei_root):
 
 
 def save_xml_file(root, path):
+    #print(path)
     LET.ElementTree(root).write(path, pretty_print=True,
                                 encoding="utf-8", xml_declaration=True)
 
@@ -525,39 +529,34 @@ def add_angled_dash(tei_root, root, xpath_condition):
                          'tei': 'http://www.tei-c.org/ns/1.0'})
     # iterate through lbs
     for lb in lbs:
-        print(LET.tostring(lb))    
+        #print(LET.tostring(lb))    
 
         # get xml id of lb
         id = lb.get("{" + xml_ns + "}id")
         if id != None:
-            print(id)
+            #print(id)
             # find preceeding lb using xpath on tei_root
             preceeding_lb = tei_root.xpath(
                 f"//tei:lb[@xml:id='{id}']/preceding::tei:lb[not(ancestor::tei:expan)]{xpath_condition}[1]", namespaces={'tei': 'http://www.tei-c.org/ns/1.0', 'xml': xml_ns})[0]
             # get id of preceeding lb
             id_preceeding = preceeding_lb.get("{" + xml_ns + "}id")
-            print(LET.tostring(preceeding_lb))
-            print(id_preceeding)
+            #print(LET.tostring(preceeding_lb))
+            #print(id_preceeding)
             # check if TextLine with this id is in root
             text_line = root.find(
                 ".//{" + page_xml_ns + "}TextLine[@id='"+id_preceeding+"']")
             # if TextLine is in root
             if text_line != None:
-                print(LET.tostring(text_line))  
+                #print(LET.tostring(text_line))  
 
                 # appen '¬' to text of TextLine
                 text = text_line.find(
                     "./{" + page_xml_ns + "}TextEquiv/{" + page_xml_ns + "}Unicode")
                 text.text = text.text + "¬"
             else:
-                print("TextLine not found")
+                #print("TextLine not found")
+                pass
     return root
-
-
-
-
-
-
 
 def create_ground_truth(tei_root, root, file, sigle, book_number, expan):
     if expan:
@@ -578,6 +577,9 @@ def create_ground_truth(tei_root, root, file, sigle, book_number, expan):
     # print(list_of_tei_lines)
     root = replace_text(root, tei_root, list_of_tei_lines, xslt)
 
+    # add lines to seq2seq GT
+    seq_2_seq_data = create_seq_2_seq_data(list_of_tei_lines, expan, tei_root)
+
     root = create_standoff_annotation(root)
 
     # for textlines
@@ -589,6 +591,7 @@ def create_ground_truth(tei_root, root, file, sigle, book_number, expan):
     new_path = os.path.join(os.getcwd(), "pagexml", sigle,
                             book_number, suffix.replace('_', ''), suffix)
     save_xml_file(root, new_path + file)
+    return seq_2_seq_data
 
 
 def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_pbs, current_element, tei_root, sigle, book_number):
@@ -611,12 +614,15 @@ def iterate_through_pagexml(path, iiif_start_number, number_of_files, remaining_
             remaining_pbs -= 1
             add_coordinates_to_missing_facs(root, tei_root, sigle)
             #dash
-            create_ground_truth(tei_root, root, file, sigle, book_number, expan=True)
-            create_ground_truth(tei_root, root, file, sigle, book_number, expan=False)
+            data_expan = create_ground_truth(tei_root, root, file, sigle, book_number, expan=True)
+            data_abbr = create_ground_truth(tei_root, root, file, sigle, book_number, expan=False)
+            seq_2_seq_pairs = create_seq_2_seq_gt(data_abbr, data_expan)
+            safe_seq_2_seq_gt(seq_2_seq_pairs, os.path.join(os.getcwd(), "pagexml", sigle, book_number, "_seq2seq_gt.txt"))
+
+
+
     save_json(images_list, sigle, book_number, expan=True)
     save_json(images_list, sigle, book_number, expan=False)
-
-            
 
     return tei_root
 
@@ -626,6 +632,8 @@ def process_numbers(i, roman_numeral, data):
     data = re.sub(f'<hi rend="color:red">{roman_numeral}<pc type="distinctio"><g ref="#char-f1f8"></g></pc></hi>',f'<hi rend="color:red">{roman_numeral}</hi>', data)
     data = re.sub(f'<pc type="distinctio"><g ref="#char-f1f8"></g></pc>{roman_numeral}<pc type="distinctio"><g ref="#char-f1f8"></g></pc>', f'<num value="{i}">{roman_numeral}</num>', data)
     data = re.sub(f' {roman_numeral}<pc type="distinctio"><g ref="#char-f1f8"></g></pc>', f' <num value="{i}">{roman_numeral}</num>', data)
+    data = re.sub(f' {roman_numeral} ', f' <num value="{i}">{roman_numeral}</num> ', data)
+
     return data
 
 def preprocess_TEI(path_tei, path_temp_tei, list_of_elements_to_be_replaced):
@@ -643,10 +651,14 @@ def preprocess_TEI(path_tei, path_temp_tei, list_of_elements_to_be_replaced):
         data = re.sub('"/>\n\s+<add>','"/><add>' , data)
         data = re.sub('</add>\n\s+</subst>','</add></subst>' , data)
 
+        # connect two words in expansion with special character for correct seq2seq sliding window
+        data = re.sub('(<expan>\w)\s+(\w</expan>)','\g<1>::\g<2>', data)
+        data = data.replace('Id est','Id::est')
+        data = data.replace('id est','Id::est')
+
         #data = re.sub('(<note type="inscription.*?">)(\w)','\g<1><lb/>\g<2>', data)
 
         data = re.sub('(<note type="inscription" place="[^"]*" anchored="[^"]*" facs="[^"]*">)(?!<lb)', '\g<1><lb/>', data)
-
 
         data = re.sub('\n\s+<label','<label', data)
         data = re.sub('\n\s+<num','<num', data)
@@ -743,8 +755,74 @@ def postprocess_TEI(path, list_of_elements_to_be_checked):
             if element not in data:
                 element_text = re.sub('<g .*?>(.*?)</g>','\g<1>',element)
                 data = re.sub(element, element_text, data)
+        data = re.sub('<num value="(\d+)"><num value="(\d+)">', '<num value="\g<1>">', data)
+        data = re.sub('</num></num>', '</num>', data)
     with open(path, "w", encoding="utf-8") as file:
         file.write(data)
+
+def create_seq_2_seq_data(list_of_lines, expan, tei_root):
+    # drop first item of sublist
+
+    # get list of all <lb/> elements in tei_root
+    lbs = tei_root.findall(".//{" + tei_ns + "}lb")
+    
+    cleaned_list_of_lines = []
+    for item in list_of_lines:
+        if len(item) < 2:
+            #print(item)
+            pass
+        else:
+            # iterate thorugh list and get item[0]
+            id = item[0]
+            for lb in lbs:
+                if lb.get("{" + xml_ns + "}id") == id:
+                    # check if brake='no' is in lb
+                    if lb.get("break") == "no":
+                        item[1] = '~' + item[1]
+
+            cleaned_list_of_lines.append(item[1])
+
+    if expan == True:
+        data = " ".join(cleaned_list_of_lines)
+    else:
+        data = " ".join(cleaned_list_of_lines)
+    data = data.replace(" ~", "")
+    data = data.replace("§", "")
+    data = data.replace("ß", "")
+    return data
+
+def create_seq_2_seq_gt(data_abbr, data_expan, window_size=10):
+    words_abbr = data_abbr.split()
+    words_expan = data_expan.split()
+
+    #if len(words_abbr) != len(words_expan):
+    #    raise ValueError("Both strings should have the same number of words")
+
+    pairs = []
+    for i in range(len(words_abbr) - window_size + 1):
+        pair_abbr = " ".join(words_abbr[i:i+window_size])
+        pair_expan = " ".join(words_expan[i:i+window_size])
+        pair_expan = pair_expan.replace("::", " ")
+        pairs.append([pair_abbr, pair_expan])
+
+    for pair in pairs:
+        #print(pair)
+        pass
+        
+    return pairs
+
+def safe_seq_2_seq_gt(pairs, path_to_gt):
+    #print(pairs)
+    # check if file exists
+    if os.path.exists(path_to_gt):
+        os.remove(path_to_gt)
+    with open(path_to_gt, "w", encoding="utf-8") as file:
+        for pair in pairs:
+            #print(pair)
+            file.write(f"{pair[0]}\t{pair[1]}\n")
+            
+            
+
 
 
 def main(sigle, book_number, iiif_start_number):
@@ -817,6 +895,7 @@ def main(sigle, book_number, iiif_start_number):
     postprocess_TEI(path_new_tei, list_of_elements_to_be_checked)
 
 
+
 """
 def main():
     sigle = "F"
@@ -856,8 +935,6 @@ if __name__ == "__main__":
 F = https://sammlungen.ub.uni-frankfurt.de/i3f/v20/{2036028}/full/full/0/default.jpg -> 412
 
 TODO: white space -> might be a problem with <pc> in chapter_number -> e, ende durch jede textregion ohne fw und chaptercount durch und von hand ersetzen
-TODO: prüfmodus
 TODO: F korrigieren, verschiedene ... haben kein unclear etc.
-TODO: für andere handschriften vorbereiten
 
 """

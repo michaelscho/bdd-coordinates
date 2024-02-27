@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2024-02-09 11:41:27.915964</Created>
+        <Created>2024-02-27 16:07:09.783548</Created>
         <LastChange>2022-06-24T22:14:03.826+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="F_0416.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_12_0416.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion orientation="0.0" id="F_0416_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="402,805 785,805 783,1062 400,1062"/>
             <TextLine id="F_0416_chapter_count_001_l_01" custom="readingOrder {index:0;}">

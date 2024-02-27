@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2024-02-09 11:41:28.492070</Created>
+        <Created>2024-02-27 16:07:10.350506</Created>
         <LastChange>2022-06-24T22:42:01.683+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="F_0417.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_12_0417.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion id="F_0417_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="119,649 230,649 230,737 119,737"/>
             <TextLine id="F_0417_chapter_count_001_l_01" custom="readingOrder {index:0;} unclear {offset:0; length:3;} unclear {offset:0; length:3;}">
@@ -620,7 +620,7 @@
                 <Coords points="2290,3364 2341,3368 2401,3325 2495,3373 2643,3353 2691,3371 2692,3287 2602,3270 2550,3300 2518,3300 2450,3262 2428,3280 2401,3270 2351,3289 2290,3284"/>
                 <Baseline points="2297,3324 2322,3326 2348,3326 2374,3327 2400,3327 2426,3327 2452,3327 2478,3327 2503,3327 2529,3326 2555,3326 2581,3327 2607,3327 2633,3327 2659,3328 2685,3329"/>
                 <TextEquiv>
-                    <Unicode>tica historia  dic̅</Unicode>
+                    <Unicode>tica historia dic̅</Unicode>
                 </TextEquiv>
             </TextLine>
             </TextRegion>

@@ -2,10 +2,10 @@
 <PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2013-07-15/pagecontent.xsd">
     <Metadata>
         <Creator>PageXML created by Burchards Dekret Digital.</Creator>
-        <Created>2024-02-09 11:41:26.224617</Created>
+        <Created>2024-02-27 16:07:08.257502</Created>
         <LastChange>2022-06-16T16:26:07.678+02:00</LastChange>
         </Metadata>
-    <Page imageFilename="F_0413.jpg" imageWidth="3089" imageHeight="4492">
+    <Page imageFilename="F_12_0413.jpg" imageWidth="3089" imageHeight="4492">
         <TextRegion orientation="0.0" id="F_0413_chapter_count_001" custom="readingOrder {index:0;} structure {type:chapter_count;}">
             <Coords points="110,901 191,901 191,950 110,950"/>
             <TextLine id="F_0413_chapter_count_001_l_01" custom="readingOrder {index:0;}">
@@ -189,7 +189,7 @@
                 <Coords points="217,2585 342,2614 564,2583 743,2638 884,2600 1097,2624 1100,2549 1021,2532 928,2563 683,2518 310,2527 271,2485 221,2493"/>
                 <Baseline points="225,2564 268,2564 311,2565 355,2567 398,2568 441,2571 485,2573 528,2574 571,2577 615,2580 658,2582 701,2584 745,2586 788,2588 831,2591 875,2592 918,2594 961,2595 1005,2596 1048,2597 1092,2597"/>
                 <TextEquiv>
-                    <Unicode>Si ꝑ trecentos sexagintav dies</Unicode>
+                    <Unicode>Si ꝑ trecentos sexaginta v dies</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0413_column_1_l_22" custom="readingOrder {index:21;}">
@@ -330,7 +330,7 @@
                 <Coords points="1286,857 1758,901 2209,870 2372,910 2375,816 1288,771"/>
                 <Baseline points="1293,839 1346,839 1400,840 1453,842 1507,843 1561,844 1614,845 1668,847 1722,849 1775,851 1829,852 1883,854 1936,857 1990,858 2044,860 2097,861 2151,863 2205,864 2258,866 2312,866 2366,867"/>
                 <TextEquiv>
-                    <Unicode>superiorib triginta et vi adiunxe¬</Unicode>
+                    <Unicode>superiorib triginta etviadiunxe¬</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0413_column_2_l_04" custom="readingOrder {index:3;}">
@@ -512,7 +512,7 @@
                 <Coords points="1243,3382 2229,3367 2228,3288 2161,3321 1882,3287 1788,3322 1243,3305"/>
                 <Baseline points="1250,3350 1298,3351 1347,3353 1395,3354 1444,3354 1493,3354 1541,3354 1590,3354 1638,3354 1687,3354 1736,3354 1784,3353 1833,3353 1881,3353 1930,3353 1979,3351 2027,3351 2076,3351 2124,3352 2173,3353 2222,3353"/>
                 <TextEquiv>
-                    <Unicode>in qᷓdrages̅ et in ieiunio iiii tēporū</Unicode>
+                    <Unicode>in qᷓdrages̅ et in ieiunioiiii tēporū</Unicode>
                 </TextEquiv>
             </TextLine>
             <TextLine id="F_0413_column_2_l_30" custom="readingOrder {index:29;}">
